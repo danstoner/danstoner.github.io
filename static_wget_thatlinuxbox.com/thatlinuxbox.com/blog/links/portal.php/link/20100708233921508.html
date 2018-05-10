@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+	<title>Google Map Pedometer: Use This GMaps Pedometer to Draw Your Walking, Running, or Biking Route</title>
+    <meta name="msapplication-task" content="name=Topo Maps and Aerial Photos; action-uri=https://www.trails.com/maps.aspx; icon-uri=/favicon.ico" />
+    <meta name="msapplication-task" content="name=My Trails; action-uri=https://www.trails.com/mytrails/; icon-uri=/favicon.ico" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="cache-control" content="public" />
+    <meta name="twitter:widgets:csp" content="on" />
+	
+	<meta name="description" content="Google Map Pedometer: use this GMaps pedometer to draw, measure, and save your walking, running, hiking, or biking route" />
+    
+    <meta name="wa_lr" scheme="DMINSTR2" content="en-US" />
+    <meta name="pagetype" scheme="DMINSTR2" content="website" />
+    <meta name="siteid" scheme="DMINSTR2" content="TRLC" />
+    <meta name="apple-itunes-app" content="app-id=1141960171">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-www.trails.com/favicon.ico" />
+    <link rel="canonical" href="https://www.trails.com/googlemap.aspx" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn-www.trails.com/imagecache/stylesheets/EFDF354EA1021DE6045089B7D2784B41435B64BA17FDC2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:light,regular,medium,thin,italic,mediumitalic,bold" title="roboto">
+    <style type="text/css">
+        @font-face {
+            font-family: Glacial-bold;
+            src: url('/ui/scripts/fonts/glacial-indifference/GlacialIndifference-Bold.otf');
+            }
+
+        @font-face {
+            font-family: Glacial-regular;
+            src: url('/ui/scripts/fonts/glacial-indifference/GlacialIndifference-Regular.otf');
+            }
+
+        @font-face {
+            font-family: Glacial-italic;
+            src: url('/ui/scripts/fonts/glacial-indifference/GlacialIndifference-Italic.otf');
+            }
+
+        @font-face {
+            font-family: Helvetica Neue;
+            src: url('/ui/scripts/fonts/helvetica/Helvetica Neu Bold.ttf') format('truetype');
+            }
+
+            /* fonts */
+        @font-face {
+            font-family: Cormorant;
+            src: url('/ui/scripts/fonts/cormorant/Cormorant-MediumItalic.otf') format("opentype");
+            }
+
+        .sprite { 
+            background: url('https://cdn-www.trails.com/ui/images/social/footer_share_icons.png') no-repeat top left; 
+            width: 32px; 
+            height: 32px;
+            display: inline-block;
+            background-size: 32px;
+            margin-right: 8px;
+        } 
+        .sprite.footer_fb { background-position: 0 0; } 
+        .sprite.footer_go { background-position: 0 -40px; } 
+        .sprite.footer_in { background-position: 0 -80px; } 
+        .sprite.footer_pi { background-position: 0 -120px; } 
+        .sprite.footer_tw { background-position: 0 -160px; } 
+    </style>
+
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-TMT9P82');</script> 
+    <!-- End Google Tag Manager --> 
+    <script type='text/javascript'>
+    //<![CDATA[ 
+        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+    //]]> 
+    </script>
+    
+    <script async src="//e790be56e19140e581d492962fbd5d92.js.ubembed.com"></script>
+            
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"  async>
+		window.Activity = null;
+		window.loadGMap = new Function(); // some pages expect this to be defined
+		window.tyntVariables = {ap:"Read more at Trails.com: "};
+		window.TRAILS = {
+			settings: {
+				date: new Date(),
+				domain: document.domain,
+				rootUrl: 'https://www.trails.com',
+				taxonomy: {outdoor:[{"absoluteUrl":"https:\/\/www.trails.com\/camping-and-wilderness.html","name":"Camping & Wilderness","relativeUrl":"\/camping-and-wilderness.html"},{"absoluteUrl":"https:\/\/www.trails.com\/fishing.html","name":"Fishing","relativeUrl":"\/fishing.html"},{"absoluteUrl":"https:\/\/www.trails.com\/snow-and-ice-sports.html","name":"Snow & Ice Sports","relativeUrl":"\/snow-and-ice-sports.html"},{"absoluteUrl":"https:\/\/www.trails.com\/sports-and-recreation.html","name":"Sports & Recreation","relativeUrl":"\/sports-and-recreation.html"},{"absoluteUrl":"https:\/\/www.trails.com\/water-sports-and-recreation.html","name":"Water Sports & Recreation","relativeUrl":"\/water-sports-and-recreation.html"}],travel:[{"absoluteUrl":"https:\/\/www.trails.com\/us-travel.html","name":"US Travel","relativeUrl":"\/us-travel.html"},{"absoluteUrl":"https:\/\/www.trails.com\/road-trips.html","name":"Road Trips","relativeUrl":"\/road-trips.html"},{"absoluteUrl":"https:\/\/www.trails.com\/popular-travel-and-attractions.html","name":"Popular Travel & Attractions","relativeUrl":"\/popular-travel-and-attractions.html"},{"absoluteUrl":"https:\/\/www.trails.com\/international-travel.html","name":"International Travel","relativeUrl":"\/international-travel.html"},{"absoluteUrl":"https:\/\/www.trails.com\/vacations-and-travel-planning.html","name":"Vacations & Travel Planning","relativeUrl":"\/vacations-and-travel-planning.html"},{"absoluteUrl":"https:\/\/www.trails.com\/us-national-parks.html","name":"US National Parks","relativeUrl":"\/us-national-parks.html"}]},
+				// selectedTab: 'trailfinder',
+				interstitialDisabled: false,
+				interstitialCount: '2',
+				enableLoginInterface: true,
+				enableSearchInterface: true,
+				lazyload: {				
+					effect: 'fadeIn',
+					effectspeed: 200,
+					placeholder: 'https://cdn-www.trails.com/ui/images/pixel-1.gif'
+				},
+				facebook: {
+					scope: ["publish_actions","email","user_location","user_friends"].join(),
+				    appId: '118696501486657',
+					status: false, // check login status
+					cookie: true, // enable cookies to allow the server to access the session,
+				    xfbml: true,  // parse social plugins on this page
+                    version: 'v2.12'
+				},
+				urls: {
+					cdn: 'https://cdn-www.trails.com',
+					jscdn: 'https://www.trails.com',
+					logout: 'https://www.trails.com/logout.aspx',
+					login: 'https://www.trails.com/googlemap.aspx',
+					signup: 'https://www.trails.com/subscribe.aspx',
+					account: 'https://www.trails.com/myaccount/',
+				    profile: 'https://www.trails.com/mytrails/profile.aspx',
+                    facebook:'https://www.trails.com/facebook-login.aspx'
+				},
+			    user: {
+			        name: '',
+			        facebookId: '',
+			        imageIcon: '',
+			        subscripionPlan: '',
+			        isLoggedIn: false,
+			        isLoggedInToFacebook: false,
+			        isSubscribed: false,
+			        isExpired: false,
+			        isTrial: false,
+					isEligibleForTrial: false
+			        },
+				server: {
+					name: "-3"
+				},
+			    isMobile: function () { if (Modernizr.mq('(max-width: 767px)')) {return true; } else { return false; } },
+			    isXS: function () { if (Modernizr.mq('(max-width: 767px)')) {return true; } else { return false; } }
+			}
+		};
+    </script>
+    
+		   <script type="text/javascript" src="https://cdn-www.trails.com/imagecache/scripts/15A7082C3FFD483ED61E038E1BDCA91DB708E5320388C8436BB6B5C4D9AA75.js"></script>
+    
+ 
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+
+<style type="text/css">
+	#GMapPedometer {  }
+		#GMapPedometer_map { border: 2px solid #c6bfa6; height: 500px; width: 612px; background: #E5E3DF url('https://cdn-www.trails.com/ui/images/ticker-4.gif') no-repeat center; }
+		#GMapPedometer_mapScreen { display: none; position: absolute; z-index: 98; border: 2px solid #eee; height: 500px; width: 612px; background: #E5E3DF url('https://cdn-www.trails.com/ui/images/ticker-4.gif') no-repeat center; }
+		#GMapPedometer_savedPermalinkForm { display: none; position: absolute; z-index: 99; margin:215px 158px 0; padding:15px; width:265px; background: #D9D4CC; border: 2px solid #c6bfa6; }
+			#GMapPedometer_savedPermalinkOutput { border: solid 1px #cecbc1; }
+			#GMapPedometer_savedPermalinkCloseButton { float: right; cursor: pointer; text-decoration: underline; margin-top: 1px; }
+		.GMapPedometer_toolbarBottom { margin: 20px 0; }
+			#GMapPedometer_saveButton,
+			#GMapPedometer_undoButton { cursor: pointer; border: none; color: #fff; font: bold 12px Trebuchet MS; height: 20px; line-height: 20px; text-align: center; width: 70px; background: transparent url('https://cdn-www.trails.com/images/sprite-buttons.png') no-repeat 0 -297px; }
+			#GMapPedometer_clearButton { margin-left: 5px; cursor: pointer; text-decoration: underline; }
+			#GMapPedometer_distanceOutput { border: solid 1px #cecbc1; width: 100px; }
+			#GMapPedometer_milesRadioButton,
+			#GMapPedometer_kilometersRadioButton { float: left; margin: 3px 4px 0 9px; }
+			.GMapPedometer_milesRadioLabel,
+			.GMapPedometer_kilometersRadioLabel { display: block; cursor: pointer; float: left; margin-top: 3px; line-height: 12px; }
+			.GMapPedometer_distanceRadioLabel { display: block; float: left; }
+			.GMapPedometer_instructions { border-top: solid 1px #cecbc1; padding: 20px; }
+		#GMapPedometer #topoRightCol { width: 320px; margin-right: 10px; padding-top: 5px; }
+		#GMapPedometer .topoMapWrapper { margin: 4px 0 0 8px; width: 616px; }
+			#GMapPedometer .cntBgTopo { background-position: 620px 0; }
+			#GMapPedometer .Box .btc { padding-top: 2px; }
+			#GMapPedometer .Box .cnt { padding: 0; }
+		#GMapPedometer_geocoder { width: 616px; margin: 3px 0 9px 8px; height: 38px; }			
+			.GMapPedometer_geocoderInputContainer { float: left; }
+				#GMapPedometer_geocoderInput { border: solid 1px #cecbc1; font-size: 16px; height: 20px; padding: 2px 3px 0; margin: 6px 10px 0 2px; width: 472px; }
+				#GMapPedometer_geocoderInput.selected { color: #000; }
+				#GMapPedometer_geocoderSubmitButton { float: right; margin-top: 8px; }
+		.GMapPedometer_instructionSteps {  }
+			.GMapPedometer_instructionSteps li { list-style-type: disc; margin-left: 20px; padding: 12px 0 0; }
+			
+	.GoogleTextAds { margin-left:41px; }
+</style>
+
+
+  
+
+    
+    <script async  type='text/javascript'>
+        var useSSL = 'https:' == document.location.protocol;
+        var src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+        var sNew = document.createElement("script");
+        sNew.async = true;
+        sNew.src = src;
+        var s0 = document.getElementsByTagName('script')[0];
+        s0.parentNode.insertBefore(sNew, s0);
+
+    </script>
+    <script type="text/javascript">
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function(){
+           var gads = document.createElement("script");
+            gads.async = true;
+            gads.type = "text/javascript";
+            var useSSL = "https:" == document.location.protocol;
+            gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+            var node = document.getElementsByTagName("script")[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+    </script>
+
+    <script async type='text/javascript'>
+      var AdBridg = AdBridg || {};
+      AdBridg.cmd = AdBridg.cmd || [];
+      (function() {
+          var adb = document.createElement("script");
+          adb.async = true;
+          adb.type = "text/javascript";
+          adb.src = '//prod.adspsp.com/adb.1852710t.min.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(adb, node);
+        
+          // Return control to GPT if the AdBridg library fails to load.
+          adb.onerror = function() {
+            if (AdBridg.exists) { return; }
+            document.createElement('IMG').src = '//adspsp.com/pt/1852710/3/1/?e=0';
+            var dq = [], es;
+            dq.process = function() { while(dq.length) { googletag.display(dq.shift()); }}
+            AdBridg.defineSlot = function(p, s, d) { return googletag.defineSlot(p, s, d).addService(googletag.pubads()); }
+            AdBridg.defineOutOfPageSlot = function(p, d) { return googletag.defineOutOfPageSlot(p, d).addService(googletag.pubads()); }
+            AdBridg.display = function(d) { dq.push(d); if (es) { dq.process(); }}
+            AdBridg.refresh = function(s, o) { googletag.pubads().refresh(s, o); }
+            AdBridg.render = function() { }
+            AdBridg.serve = function() { googletag.enableServices(); es=1; dq.process(); }
+            AdBridg.sizeMapping = function() { return googletag.sizeMapping(); }
+            AdBridg.useSizeMapping = function() { }
+            while (AdBridg.cmd.length) { googletag.cmd.push(AdBridg.cmd.shift()); }
+            AdBridg.cmd = googletag.cmd;
+          }
+      })();
+    </script>
+    
+
+    <script async type="text/javascript">
+    function gTrailsPositionError(err) {
+        if (err.code == err.PERMISSION_DENIED) {
+            ShowAppMessage("Error", "Your browser supports geolocation, but permission for your location information was denied.<br><br>If you're using the Platform Preview, you can enable geolocation by clicking Page->Allow websites to track your physical location.");
+        } else if (err.code == err.POSITION_UNAVAILABLE) {
+            ShowAppMessage("Error", "Unable to locate your position.");
+        } else {
+            // err.TIMEOUT
+            ShowAppMessage("Error", "Unable to locate your position; the call to Location Services timed out.");
+        }
+    }
+
+    function gTrailsShowMap(position) {
+        document.location.href = "/trailfinder/browsebymap/?z=13&lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
+    }
+
+    function gTrailsGetLocation() {
+        navigator.geolocation.getCurrentPosition(gTrailsShowMap, gTrailsPositionError);
+    }
+    </script>
+
+<script type="text/javascript">
+    
+    (function ($) {  	    
+        $(window).load(function () {
+            $.slidebars();
+            // Slidebars Submenus
+            $('.sb-toggle-submenu').off('click').on('click', function () {
+                $submenu = $(this).parent().children('.sb-submenu');
+                $(this).add($submenu).toggleClass('sb-submenu-active'); // Toggle active class.
+
+                if ($submenu.hasClass('sb-submenu-active')) {
+                    $submenu.slideDown(200);
+                } else {
+                    $submenu.slideUp(200);
+                }
+                return false;
+            });
+        });
+    })(jQuery);
+
+        
+    </script>
+    
+<meta name="msvalidate.01" content="129B5DE6FF8DD0ECBDD457C93FF101E3" />
+
+    
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '107255366781543'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=107255366781543&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+   
+
+</head>
+
+<body >
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMT9P82" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
+
+
+<div id="fb-root"></div>
+<div class="AppMessage" style="display:none;"></div>
+<div id="sb-site">
+    
+        <div id="Bottom-Ad-Mobile" class="sticky-ad">
+            <div class="ads" id="Trails_Articles_ATF_Leaderboard__container">
+                <script async type="text/javascript">
+                AdBridg.cmd.push(function(){
+                var map = AdBridg.sizeMapping()
+                                       .addSize([0, 0], [[320, 50]]) // Nothing on mobile
+                .addSize([767, 0], [[728, 90], [970, 90]]) // Normal sizes for desktop
+                .build();
+                      var unit = AdBridg.defineSlot('/1004147/Trails_Articles_ATF_728x90', [], 'Trails_Articles_ATF_Leaderboard__container');
+                unit.defineSizeMapping(map);
+                AdBridg.useSizeMapping(unit, map);
+                AdBridg.serve();
+                      AdBridg.display('Trails_Articles_ATF_Leaderboard__container');
+                });
+                </script>
+            </div> 
+            <a id="Bottom-Ad-Close" href="/" title="Close this ad temprarely"><img src="https://cdn-www.trails.com/ui/images/close.png"></a>
+        </div>
+    
+	<div class="GlobalWrapper margin-top-for-ads" >
+		
+        <div id="HeaderDiv" class="hidden-mobille-iPad">
+		    <div class="HeaderWrapper">
+			    <div id="SiteHeader" class="CONTAINER">
+				    <a title="Trails.com - Your Guide to the Outdoors" rel="https://www.trails.com"><img id="SiteGraphicLogo" width="" height="" src='https://cdn-www.trails.com/ui/images/trails-logo-v1.png?v=0308044454' alt="Trails.com - Your Guide to the Outdoors" title="Trails.com - Your Guide to the Outdoors" /></a>
+                       <form action="/trailfinder/browsebymap/?q=" class="logged-out">
+			        <div id="BrowseMapSearchBoxHeader">
+	                    <input type="text" maxlength="50" id="TrailFinderSearchBoxInput" class="TrailFinderSearchBoxInput" name="q" placeholder="Trail name, park, city, state or zip">
+                        <input type="submit" value=""  class="TrailFinderSearchBoxButton" id="TrailFinderSearchBoxButtondesktop">
+                    </div>
+
+                    </form>
+                    <div id="SiteBanner">
+                        <div class="header-section LoggedOutUserHeaderSection">
+                        
+                            <div id="AccountInfo">
+                                <a class="LoginLink" href="/login.aspx" data-redirect="https://www.trails.com/googlemap.aspx">Log In</a>
+                                <a id="CreateAccountLink" href="/subscribe.aspx?h=r&r=%2fgooglemap.aspx">Sign Up</a>
+                            </div>
+                        
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+			
+            <div class="lower-nav">
+                <ul id="SiteNavigation" class="CONTAINER">
+				<li><a class="trailfinder" id="Trail Finder|Trail Finder" href="https://www.trails.com/trails.aspx">Trail Finder</a>
+                    <b  id="trailfinder" class="down-arrow-nav"><img src="https://cdn-www.trails.com/ui/images/icon_down_2x.png" /></b>
+					<div>
+						<ul>
+							<li><a id="Trail Finder|Top 100 Trails" href="https://www.trails.com/toptrails.aspx">Top 100 Trails</a></li>
+							<li><a id="Trail Finder|National Park Trails" href="https://www.trails.com/national-parks.aspx">National Park Trails</a></li>
+							<li><a id="Trail Finder|State Park Trails" href="https://www.trails.com/state-parks.aspx">State Park Trails</a></li>
+							<li><a id="Trail Finder|Popular City Trails" href="https://www.trails.com/trails-near-cities.aspx">Popular City Trails</a></li>
+							<li><a id="Trail Finder|Canada Trails" href="https://www.trails.com/canada">Canada Trails</a></li>
+							<li><a id="Trail Finder|Camp Directory" href="https://www.trails.com/campgrounds">Camp Directory</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a id="My Trails|My Trails" class="mytrails" href="/mytrails/" >Activity Feed</a></li>
+                <li><a id="Forums" href="https://forums.trails.com//entry/jsconnect?client_id=1882416261&Target=%2F" >Forums</a></li>
+				<li><a class="topofinder" id="Topo Maps|Topo Maps" href="https://www.trails.com/maps.aspx">Topo Maps</a></li>
+                <li><a class="outdoor" id="Outdoor|Outdoor" href="https://www.trails.com/outdoor/">Outdoor 101</a>
+                    <b  id="outdoor" class="down-arrow-nav"><img src="https://cdn-www.trails.com/ui/images/icon_down_2x.png" /></b>
+					<div>
+						<ul>
+						
+						<li><a id="Outdoor|Camping & Wilderness" href="https://www.trails.com/camping-and-wilderness.html">Camp & Wilderness</a></li>
+						
+						<li><a id="Outdoor|Fishing" href="https://www.trails.com/fishing.html">Fishing</a></li>
+						
+						<li><a id="Outdoor|Snow & Ice Sports" href="https://www.trails.com/snow-and-ice-sports.html">Snow & Ice Sports</a></li>
+						
+						<li><a id="Outdoor|Sports & Recreation" href="https://www.trails.com/sports-and-recreation.html">Sports & Recreation</a></li>
+						
+						<li><a id="Outdoor|Water Sports & Recreation" href="https://www.trails.com/water-sports-and-recreation.html">Water Recreation</a></li>
+						
+						</ul>
+					</div>
+				</li>				
+				<li><a class="travel" id="Travel|Travel" href="https://www.trails.com/travel/">Travel</a>
+                    <b id="travel" class="down-arrow-nav"><img src="https://cdn-www.trails.com/ui/images/icon_down_2x.png" /></b>
+					<div>
+						<ul>
+						
+						<li><a id="Travel|US Travel" href="https://www.trails.com/us-travel.html">US Travel</a></li>
+						
+						<li><a id="Travel|Road Trips" href="https://www.trails.com/road-trips.html">Road Trips</a></li>
+						
+						<li><a id="Travel|Popular Travel & Attractions" href="https://www.trails.com/popular-travel-and-attractions.html">Popular Travel</a></li>
+						
+						<li><a id="Travel|International Travel" href="https://www.trails.com/international-travel.html">International Travel</a></li>
+						
+						<li><a id="Travel|Vacations & Travel Planning" href="https://www.trails.com/vacations-and-travel-planning.html">Travel Planning</a></li>
+						
+						<li><a id="Travel|US National Parks" href="https://www.trails.com/us-national-parks.html">US National Parks</a></li>
+						
+						</ul>
+					</div>
+				</li>
+				
+                
+                <li class="app-store-icon-li"><a onclick="Appdownload()" class="app-store-icon" ><span class="downdload-app"><b>DOWNLOAD APP</b></span></a></li>
+            </ul>
+            </div>
+            
+            
+        </div>
+
+        <div class="mobileHeader visible-mobille-iPad">
+            <div class="logoWrapper"><a rel="https://www.trails.com"><img alt="Trails.com - Your Guide to the Outdoors" class="logo" src='https://cdn-www.trails.com/ui/images/trails-logo-v1.png?v=0308044454' /></a></div>
+            <div class="mainNav">
+                
+                <ul class="FLC">
+                    <li id="Nav-icon">
+                        <label class="options nav-icon-mobile icon-open" ></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="cb"></div>
+                </div>
+            <div class="cb"></div>
+        <div class="mobile-nav-field-div">
+            <ul class="sb-menu">
+                <li>
+                    <form action="/trailfinder/browsebymap/">
+			        <div id="BrowseMapSearchBoxHeader">
+	                    <input type="text" maxlength="50" id="TrailFinderSearchBoxInputMobile" class="TrailFinderSearchBoxInput" name="q" placeholder="Trail name, park, city, state or zip">
+                        <input type="submit" value=""  class="TrailFinderSearchBoxButton" id="TrailFinderSearchBoxButtondesktopMobile">
+                    </div>
+            </form>
+                </li>
+                <li><a href="" onclick="gTrailsGetLocation(); return false;"><label class="label-menu">Trails Near Me</label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                <li><a href="/toptrails.aspx"><label class="label-menu">Top 100 Trails </label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                <li><a href="/maps.aspx"><label class="label-menu">Topo Maps</label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                <li><a href="/mytrails/"><label class="label-menu">Activity Feed</label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                <li><a href="https://forums.trails.com//entry/jsconnect?client_id=1882416261&Target=%2F"><label class="label-menu">Forums</label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                <li class="menu-item">
+                    <a class="link-li link-li-first" href="/outdoor/"> <label class="label-menu">Outdoor 101 </label> <label class=""><span class="fa fa-angle-right"></span></label></a>
+                    <input type="checkbox" id="outdoor-mb-mnu" class="mobile-nav-chk" />
+                </li>
+                <li class="menu-item">
+                    <a class="link-li link-li-first" href="/travel/"><label class="label-menu">Travel </label> <label class=""><span class="fa fa-angle-right"></span></label></a>
+                    <input type="checkbox" id="travel-mb-mnu" class="mobile-nav-chk" />
+                </li>
+                 
+                    <li><a class="LoginPageLinkForMobile" onclick="return OpenLoginPopUp();" href="https://www.trails.com/login.aspx?r=https%3a%2f%2fwww.trails.com%2fgooglemap.aspx"> <label class="label-menu">Log In</label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                    <li><a href="/subscribe.aspx?h=r&r=%2fgooglemap.aspx"><label class="label-menu">Sign Up </label> <label class=""><span class="fa fa-angle-right"></span></label></a></li>
+                
+            </ul>
+		</div>
+
+		<form name="aspnetForm" method="post" action="/googlemap.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgyODY3MDE4N2Rkxp8Ep6dU05O5v2/6kVhg3aMC1Vg=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FFEC4004" />
+</div>
+			
+            <div >
+			    <div  class="Breadcrumbs hidden-xs">
+				    <span ><a  href="https://www.trails.com"><span  >Trails</span></a></span>
+				    
+                        <span   class="breadcrumbList">
+                            
+                            &raquo; <a  href="&#47;googlemap.aspx"><span >Google Map Pedometer</span></a>
+                            
+                        </span>
+				    
+			    </div>
+            </div>
+			
+
+			<div class="Wrapper FLC" id="uxWrapper" runat="server">
+				
+ 
+    <div class="FullPage">
+		<h1 class="GlobalTitle mb">Google Map Pedometer</h1>
+        <div id="GMapPedometer" class="topoMed">
+            <div class="Box Search">
+                <div class="btc">
+                    <div class="cnt">
+                        <div id="cntBg" class="cntBgTopo">
+                            <div class="cnt4">                            
+                                <div id="topoRightCol">
+									
+    <!-- Trails.com/Content 320x50/300x250 -->
+    <div id="a0c4094a-861a-49c8-a8e7-4cf66cfb7150" style="display:inline;"></div>
+    <script type="text/javascript">
+        if (Modernizr.mq("(min-width: 768px)")) {
+            $('#a0c4094a-861a-49c8-a8e7-4cf66cfb7150').html('<div id="320x50/300x250"><scr' + 'ipt type="text/javascript">googletag.cmd.push(function () { googletag.display("320x50/300x250"); });</scr' + 'ipt></div>');
+        }
+    </script>
+ 
+                                    
+                                </div>
+                                
+                                <div id="GMapPedometer_geocoder">
+									<div class="GMapPedometer_geocoderInputContainer">
+										<a id="GMapPedometer_geocoderSubmitButton" class="Button3"><span>+ Zoom In</span></a>
+										<input id="GMapPedometer_geocoderInput" type="text" />
+									</div>
+								</div>
+                                
+                                <div class="topoMapWrapper">
+                                    <div class="topoSize">
+										<div id="GMapPedometer_mapScreen"></div>
+										<div id="GMapPedometer_savedPermalinkForm">
+											<a id="GMapPedometer_savedPermalinkCloseButton">Close</a>
+											<label id="GMapPedometer_savedPermalinkLabel" for="GMapPedometer_savedPermalinkOutput">Permalink:</label>
+											<input id="GMapPedometer_savedPermalinkOutput" type="text" />
+										</div>
+                                        <div id="GMapPedometer_map"></div>
+                                        <div class="GMapPedometer_toolbarBottom">
+											<div class="fl">
+												<strong class="GMapPedometer_distanceRadioLabel">Total Distance: <input id="GMapPedometer_distanceOutput" type="text" value="0.000" /></strong>
+												<input id="GMapPedometer_milesRadioButton" type="radio" name="dist" checked="checked" /><label class="GMapPedometer_milesRadioLabel" for="GMapPedometer_milesRadioButton">miles</label>
+												<input id="GMapPedometer_kilometersRadioButton" type="radio" name="dist" /><label class="GMapPedometer_kilometersRadioLabel" for="GMapPedometer_kilometersRadioButton">kilometers</label>
+											</div>
+		                                    <div class="fr mr">
+												<input id="GMapPedometer_saveButton" type="button" value="Save" />
+												<input id="GMapPedometer_undoButton" type="button" value="Undo" />
+												<a id="GMapPedometer_clearButton">Clear</a>
+		                                    </div>
+		                                    <div class="cl"></div>
+		                                </div>		                                
+		                                <div class="GMapPedometer_instructions">
+											<h2 class="GlobalSubtitle">Google Map Pedometer Instructions:</h2>
+											<ul class="GMapPedometer_instructionSteps">
+												<li><strong>Moving the Map:</strong> Move the map by using the directional arrow controls, or click and hold on the map to drag it.</li>
+												<li><strong>Zoom to Your Location:</strong> Use the <strong>+</strong> and <strong>-</strong> map controls to zoom in or out, or the use scroll wheel on your mouse.</li>
+												<li><strong>Draw Your Route:</strong> When you are where you want to be, begin clicking on the map to draw your route. Click once to determine your starting point, then click again at every turn (if your route contains turns), and once more to determine your endpoint.</li>
+												<li><strong>Distance:</strong> The total distance of your route is displayed in the field below the map. The radio button allows you to display the distance in either miles or kilometers.</li>
+												<li><strong>Saving Your Route:</strong> Click the Save button below the map. A URL containing a direct link to your route will appear over the map. Copy this link and save the link on your computer for future access, or to share your route with others.</li>
+												<li><strong>To Reset:</strong> Click on the Clear link below the map.</li>
+											</ul>
+		                                </div>
+		                                
+		                                
+										
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<div class="GoogleTextAds" id="Trails_Articles_ATF_728x90__container">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-3619764495662405"
+         data-ad-slot="5626810630"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                                    </div>
+                                </div>
+                                <div class="cb"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bb" style="background-color:#D9D4CC;">
+                        <div class="c"></div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="cb"></div>
+
+			</div>
+			
+		</form>
+        <div id="Login-PopUp"></div>
+		<div class="cb"></div>
+        
+		<div id="SiteFooterWrapper">
+	    
+            <div class="cb"></div>
+            <div class="SiteFooterCopyright">
+                <div class="Column">
+                    <div class="fl footer_leftlinks footer_links">
+                        <a href="/contact.aspx">Contact</a><a href="http://www.lovetoknowmedia.com/advertising/">Advertise</a><a href="/about.aspx">About Us</a></div>
+                    <span>
+                        <ul class="social-buttons hidden-xs hidden-sm footer_links social-col1">
+                        <li><a title="Facebook" target="_blank" href="https://www.facebook.com/Trails" rel="noopener "><span class="sprite footer_fb"></span></a></li><li><a title="Twitter" target="_blank" href="https://www.twitter.com/Trails" rel="noopener "><span class="sprite footer_tw" ></span></a></li><li><a title="Pinterest" target="_blank" href="https://www.pinterest.com/trailsdotcom/" rel="noopener "><span class="sprite footer_pi" ></span></a></li><li><a title="instagram" target="_blank" href="https://www.instagram.com/trailsdotcom/" rel="noopener "><span class="sprite footer_in" ></span></a></li><li><a title="Google Plus" target="_blank" href="https://plus.google.com/+trailsoutdoors" rel="noopener "><span class="sprite footer_go" ></span></a></li>
+                        </ul>
+                    </span>
+                    <div class="fr footer_rightlinks footer_links">
+                        <a href="/privacy.aspx">Privacy Policy</a><a href="/terms.aspx">Terms of Use</a><a class="DemandMediaLogo">&copy; <span class="hidden-xs">2018</span> LoveToKnow <span class="visible_mobile"> Corp.</span></a>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+            </div>
+		</div>
+        
+		
+       <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js' type="text/javascript"></script>
+<script type="text/javascript">
+   L.mapbox.accessToken='pk.eyJ1IjoidHJhaWxzIiwiYSI6ImNpdGwyM2w4aDAwMDUyeW84dTE2Yzkycm4ifQ.Rb2yrBLWc3M3sPtwE2yUtA';
+    var map = L.mapbox.map('GMapPedometer_map', 'mapbox.outdoors')
+    map.poin
+    // Mapbox
+    var geocoder = L.mapbox.geocoder('mapbox.places-v1');
+    geocoder.query('United States', showMap);
+    function showMap(err, data) {
+        if (err) throw err;
+        if (data.latlng) {
+            map.setView([data.latlng[0], data.latlng[1]], 4);
+        }
+        map.on('click', function (e) {
+            var newMarker = new L.marker(e.latlng).addTo(map);
+            
+        })
+    }
+    
+
+    TRAILS.objects.GMapPedometer = (function (pedometer) { //http://bit.ly/WTvZX
+		var distanceFormatId = jQuery('#GMapPedometer_milesRadioButton').is(':checked')
+			? pedometer.distanceFormatId.MILES
+			: pedometer.distanceFormatId.KILOMETERS;
+		var bitlyApiUrl = 'http://bit.ly/javascript-api.js?version=latest&amp;login=trails&amp;apiKey=R_f95945fad350578037872d023404b3e9';
+		var defaultText = 'Find a location (e.g. Will Rogers State Park)';
+		var $distanceOutput = jQuery('#GMapPedometer_distanceOutput');
+		var $geocoderInput = jQuery('#GMapPedometer_geocoderInput');
+		var $mapScreen = jQuery('#GMapPedometer_mapScreen');
+		var $permalinkForm = jQuery('#GMapPedometer_savedPermalinkForm');
+		var $permalinkOutput = jQuery('#GMapPedometer_savedPermalinkOutput');
+		
+		pedometer.getPermaLink = function(){
+			BitlyCB.showPermalink = function(response){
+				$permalinkForm.fadeIn(200);
+				
+				for(var key in response.results)
+					return $permalinkOutput.val(response.results[key].shortUrl);
+			};
+		};
+		pedometer.updateDistance = function(distanceFormatId){
+			$distanceOutput.val(pedometer.getDistance(distanceFormatId).toFixed(3));
+		};
+		pedometer.showLocation = function(){
+			var value = $geocoderInput.val().trim();
+			
+			if(value.length == 0) return;
+			if(value == defaultText)
+				value = 'Will Rogers State Park';
+			var geocoder = L.mapbox.geocoder('mapbox.places-v1');
+			geocoder.query('United States', showMap);
+			pedometer.Geocoder.getLocations(value, function(locations){
+				pedometer.setCenter(locations.Placemark[0].Point.coordinates[1], locations.Placemark[0].Point.coordinates[0], Math.floor(locations.Placemark[0].AddressDetails.Accuracy * 1.75));
+			});
+		};
+		pedometer.showPermalink = function(){
+			if(pedometer.getWaypointCount == 0)
+				return;
+				
+			$mapScreen.fadeIn();
+			
+			if(!window.BitlyApi)
+				return TRAILS.utils.importScript(bitlyApiUrl, function(){
+							pedometer.getPermaLink();																
+							pedometer.showPermalink();
+						});
+			
+			var url = new TRAILS.utils.QuerystringParser();
+			var center = pedometer.getCenter();
+			
+			url.deleteField('zl');												
+			url.setField('z', pedometer.getZoom());
+			url.setField('y', center.lat());
+			url.setField('x', center.lng());
+			url.setField('path', pedometer.getEncodedWaypoints());
+			
+			BitlyClient.shorten(url, 'BitlyCB.showPermalink');
+		};
+		
+		if(google.loader.ClientLocation)
+			$geocoderInput.val([google.loader.ClientLocation.address.city, google.loader.ClientLocation.address.region, google.loader.ClientLocation.address.country_code].join(', '));
+		
+		pedometer.updateDistance(distanceFormatId);
+		pedometer.addListener('click', function(overlay, waypoint){
+			if(waypoint) pedometer.updateDistance(distanceFormatId);
+		});
+		$mapScreen.bind('click', function(){
+			$mapScreen.fadeOut();
+			$permalinkForm.fadeOut();
+		}).fadeTo(0, 0.66).hide();
+		$geocoderInput.bind('keypress', function(event){
+			if(event.keyCode != 13) return;
+			
+			pedometer.showLocation();
+			
+			return false;
+		}).bind('focus', function(){
+			if(this.value.trim() == defaultText)
+				jQuery(this).css({ color: 'black' }).val(String.empty);
+		}).bind('blur', function(){
+			if(String.isNullOrEmpty(this.value))
+				jQuery(this).css({ color: 'grey' }).val(defaultText);
+		});
+		jQuery('#GMapPedometer_savedPermalinkCloseButton').bind('click', function(){
+			$mapScreen.fadeOut();
+			$permalinkForm.fadeOut();
+		});
+		jQuery('#GMapPedometer_geocoderSubmitButton').bind('click', pedometer.showLocation);
+		jQuery('#GMapPedometer_saveButton').bind('click', pedometer.showPermalink);
+		jQuery('#GMapPedometer_undoButton').bind('click', function(){
+			pedometer.removeWaypoint(pedometer.getWaypointCount() - 1);
+			pedometer.updateDistance(distanceFormatId);
+		});
+		jQuery('#GMapPedometer_clearButton').bind('click', function(){
+			pedometer.removeWaypoint();
+			pedometer.updateDistance(distanceFormatId);
+		});
+		jQuery('#GMapPedometer_milesRadioButton').bind('click', function(){
+			pedometer.updateDistance(distanceFormatId = pedometer.distanceFormatId.MILES);
+		});
+		jQuery('#GMapPedometer_kilometersRadioButton').bind('click', function(){
+			pedometer.updateDistance(distanceFormatId = pedometer.distanceFormatId.KILOMETERS);
+		});
+		
+		return pedometer;
+    })(new TRAILS.utils.GMapPedometer('GMapPedometer_map'));
+</script>
+	
+        
+		
+	</div>
+
+</div>
+
+	<div id="reg-dialog-container">
+		<div id="reg-overlay"></div>
+		<div class="floater"></div>
+		<div id="reg-container" class="reg-rounded">
+			<a onclick="$('#reg-frame').remove(); $('#reg-dialog-container').css('display', 'none')"><div class='css-sprite sprite-close-button' id="reg-close-button"></div></a>
+		</div>
+	</div>
+       <div id="download-app-popup"></div>
+ 
+    <script async type="text/javascript">
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', 'UA-78964447-1', 'auto');
+	    ga('send', 'pageview');
+	</script>
+
+
+	<script async type="text/javascript">
+	//<![CDATA[	
+	    if (typeof (request_google_ads) === 'function') {
+	        request_google_ads();
+	    }
+	
+		$('[data-copy]').each(function(i){
+			var dataText = $(this).attr('data-copy');
+			$(this).html(dataText);
+		});
+	
+		jQuery('a[rel*=http]').each(function(){ this.href = this.rel; });
+	//]]>
+	</script>
+    
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<div style="height:0px; overflow:hidden;">
+    <script type="text/javascript">
+    // <![CDATA[
+    var google_conversion_id = 991491445;
+    var google_conversion_label = "rM3ICLPljAQQ9erj2AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    // ]]>
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991491445/?value=0&amp;label=rM3ICLPljAQQ9erj2AM&amp;guid=ON&amp;script=0"/></div></noscript>
+</div>
+
+
+<script async type="text/javascript">
+
+    function Appdownload(){
+        $("#download-app-popup").load("/download-app-popup.aspx", function () {
+       
+        });
+    }
+
+    function OpenLoginPopUp(){
+        if(window.innerWidth <1025 && window.innerWidth >767)
+        {
+            $(".LoginPageLinkForMobile").attr("href","");
+            var obj= $(".LoginLink");
+            var RedirectUrl = $(obj).attr("data-redirect");
+        var isloggedIn = "false";
+            if(isloggedIn != "true") {
+                $("#Login-PopUp").load('https://www.trails.com/login.aspx?pop-up=true&h=r',function() {
+                    if((RedirectUrl + "").indexOf("retrieved")>-1){
+                        $(".forgotpassword").css("display","block");
+                        $(".forgotpassword").css("margin-top","20px");
+                    }
+                    $("#LoginForm").submit(function(){
+                        $.post($(this).attr("action"),$(this).serialize(),function(data){
+                            $(".forgotpassword").css("display","none");
+                            if(data=="<error>")
+                            {
+                                $(".error-msg").css("display","block");
+                                $(".error-msg").css("margin-top","20px");
+                            }
+                            else
+                            {
+                                if(RedirectUrl != undefined)
+                                    window.location.href= decodeURIComponent(RedirectUrl.replace("pop-up=1",""));                                        
+                                else
+                                {
+                                    var _sso = "";
+                                    if(_sso.length > 0)
+                                        window.location.href = _sso;
+                                    else
+                                        window.location.href = window.location.href.replace("pop-up=1","");
+                                }
+                                
+                            }
+                        });
+                        return false;
+                    });
+                    return false;
+                });
+            return false;
+        }
+            return false;
+        }
+        return;
+    }
+        function DisableActiveBreadcrum(){
+            $(".Breadcrumbs a:last").attr("href","");
+            $(".Breadcrumbs a:last").css('textDecoration','none');
+            $(".Breadcrumbs a:last").bind('click', function(e){
+                e.preventDefault();
+            });
+            $(".Breadcrumbs a:last").css('cursor','default');
+        }
+
+    
+    $(function(){
+        
+            $(document).on("click","#Nav-icon",function(){
+                if(window.innerWidth <1025 && window.innerWidth >767 ){
+                    $(".sticky-ad").toggleClass("top-100");
+                }
+            })
+        
+    });    
+
+
+        $(function(){
+        $(document).on("click", ".nav-icon-mobile", function () {
+            $(".mobile-nav-field-div").slideToggle(function () {
+                $("#Nav-icon label").toggleClass("icon-close");
+        });
+        });
+        $(document).on("click",".profile-icon-mobile",function(){
+            $(".profile-menu").slideToggle();            
+        });
+        
+
+            DisableActiveBreadcrum();
+
+        if(window.innerWidth > 767){
+            if($("#Trails_Category_BTF__container").length >0){
+                var fixmeTop = $('#Trails_Category_BTF__container').offset().top - 100;       // get initial position of the element
+                var addheight = $('#Trails_Category_BTF__container').height();
+                $(window).scroll(function() {                  // assign scroll event listener
+
+                    var currentScroll = $(window).scrollTop(); // get current position
+
+                    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+                        $('#Trails_Category_BTF__container').addClass("right-side-sticky-ad-div");
+                        $("#SiteFooterWrapper").css("margin-top",addheight+50);
+                    } else {                                   // apply position: static
+                        $('#Trails_Category_BTF__container').removeClass("right-side-sticky-ad-div");
+                        $("#SiteFooterWrapper").css("margin-top","100px");
+                       
+                    }
+
+                });
+            }            
+        }
+
+                        
+
+            $(document).on("click", ".LoginLink", function(){
+            var RedirectUrl = $(this).attr("data-redirect");
+            var isloggedIn = "false";
+                if(isloggedIn != "true") {
+                if("false"=="true" && "true"=="true")
+                    window.location.href=RedirectUrl.toLowerCase().replace("login.aspx","login_mobile.aspx");
+                        
+                    $("#Login-PopUp").load('https://www.trails.com/login.aspx?pop-up=true&h=r',function() {
+                    if((RedirectUrl + "").indexOf("retrieved")>-1){
+                            $(".forgotpassword").css("display","block");
+                            $(".forgotpassword").css("margin-top","20px");
+                        }
+                        $("#LoginForm").submit(function(){
+                            $.post($(this).attr("action"),$(this).serialize(),function(data){
+                                $(".forgotpassword").css("display","none");
+                                if(data=="<error>")
+                                {
+                                    $(".error-msg").css("display","block");
+                                    $(".error-msg").css("margin-top","20px");
+                                }
+                                else
+                                {
+
+                                    if(RedirectUrl != undefined)
+                                {
+                                    var _sso = "";
+                                    if(_sso.length > 0)
+                                        window.location.href = _sso;
+                                    else
+                                        window.location.href = window.location.href.replace("pop-up=1","");
+
+                                }
+                                
+                                    else
+                                {
+                                    var _sso = "";
+                                    if(_sso.length > 0)
+                                        window.location.href = _sso;
+                                    else
+                                        window.location.href = window.location.href.replace("pop-up=1","");
+                                }
+                                
+                            }
+                            });
+                            return false;
+                        });
+
+                    });
+                }
+                return false;
+            });        
+        });
+
+    </script>
+   
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css" />
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+<script async type="text/javascript">
+    jQuery('#PrivacyAndTerms').remove();
+
+    $(function () {
+        $("#Bottom-Ad-Close").click(function(e){
+            e.preventDefault();
+            $("#Bottom-Ad-Mobile").css("display", "none");
+        });
+
+            $.widget("custom.catcomplete", $.ui.autocomplete, {
+                _create: function () {
+                    this._super();
+                    this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+                },
+                _renderMenu: function (ul, items) {
+                    //console.log(items);
+                    var that = this,
+                      currentCategory = "";
+                    $.each(items, function (index, item) {
+                        var li;
+                        if (item.category != currentCategory) {
+                            ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
+                            currentCategory = item.category;
+                        }
+
+                        li = that._renderItemData(ul, item);
+
+                        if (item.category == "Trail Name") {
+                            var liHtml = li.html();
+                            var completehtml = "<div><img class='TrailActivityImageIcon' src='/images/browsebymap/map-icons/brown-pin-icon.svg'/><div class='TrailNameList'> " + liHtml + " - " + item.activityname;
+
+                            if (item.hasguide.trim() == "1") {
+                                completehtml = completehtml + "<div class='TrailGuideNamediv'>" + item.productfamilyname + "</div>";
+                            }
+                            completehtml = completehtml + "</div></div>";
+                            li.html(completehtml);
+                        }
+
+
+
+                    });
+                }
+            });
+
+        var interval = setInterval(function () {
+
+            if ($(".TrailFinderSearchBoxInput").length > 0) {
+                $(".TrailFinderSearchBoxInput").catcomplete({
+                    delay: 250,
+                    minLength: 3,
+                    source: function (request, response) {
+                        $.getJSON("/ajaxsearchautocomplete.aspx?term=" + encodeURIComponent(request.term), response);
+                    },
+                    select: function (event, ui) {
+                        var item = ui.item;
+                        if (item.category == "Trail Name") {
+                            window.location = "/tcatalog_trail.aspx?trailid=" + item.trailid;
+                        } else {
+                            if (item.slug.trim() != "")
+                                window.location = "/" + item.slug;
+                            else
+                            window.location = "/trailfinder/browsebymap/?q=" + item.label;
+                        }
+                    },
+                    open: function() {
+                        
+                        if(window.innerWidth > 767){
+                        var _position= $("#TrailFinderSearchBoxInputMobile").offset(),left = position.left,top = position.top;
+                        $("#ui-id-2").css({left: left + "px", top: top + 40+ "px" });
+                        }
+                        
+                    }
+                });
+
+                clearInterval(interval);
+            }
+
+        }, 500);
+
+        $("#TrailFinderSearchBoxButtondesktopMobile").click(function () {
+            $("#TrailFinderSearchBoxInputMobile").parents("form").trigger("submit");
+            return false;
+        });
+        $("#TrailFinderSearchBoxInputMobile").keypress(function (e) {
+            var keyCode = e.which || e.keyCode;
+            if (keyCode == 13) {
+                $("#TrailFinderSearchBoxInputMobile").parents("form").trigger("submit");
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

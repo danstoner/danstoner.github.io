@@ -1,0 +1,1063 @@
+<!DOCTYPE HTML>
+
+
+<HTML>
+<HEAD>
+
+
+<meta charset="UTF-8">
+
+<title>Hocking Hills State Forest Information</title>
+<meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+
+ 
+<link rel="canonical" href="https://www.hockinghills.com/hocking_hills_state_forest.html"/>
+
+
+
+<meta name="description" content="Southeastern Ohio's Scenic Wonderland - Hocking Hills. The 9 State Parks and State Forests. How to get there, things to do, interesting local merchants, and places to stay.  Complete information about the Hocking Hills Ohio Region.">
+<meta name="keywords" content="hocking hills,Hocking Hills,HOCKING HILLS, ohio, state parks, forests, camping, vacation cabins, hocking, horseback riding, hills, rockbridge, rock house, cedar falls, ash cave, cantwell, conkles, hocking hills, rock climbing, OHIO, oh, caves, indian run, ohio getaway, ohio weekend, ohio cabin rentals">
+
+
+<meta name="distribution" content="GLOBAL">
+<meta name="language" content="en-us">
+<meta name="revisit-after" content="7 Days">
+<meta name="robots" content="All">
+<meta name="subjects" content="travel,lodging,rentals,tourism">
+<meta name="notes" content="Outdoor Recreation">
+<meta name="copyright" content="hockinghills.com">
+<meta name="author" content="T Walker">
+<meta name="rating" content="GENERAL">
+<meta name="referrer" content="origin" />
+<link rel="favicon.ico" href="//www.hockinghills.com/favicon.ico" >
+<link rel="shortcut icon" href="//www.hockinghills.com/favicon.ico"> 
+
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+
+
+<script type="text/javascript" language="javascript" src="/js/webslidemenu.js"></script>
+
+<script language="javascript">
+
+function linkout(avar,uvar) {
+	if (document.getElementById("linker")) {
+		igo = document.getElementById("linker");
+		document.getElementById("linkera").value=avar;
+		document.getElementById("linkeru").value=uvar;
+		igo.submit();
+	}
+}
+
+function add2Planner(cvar,ivar)
+{
+
+	if (document.getElementById(cvar+ivar)) {
+		var str = document.getElementById(cvar+ivar).innerHTML;
+		if (str.lastIndexOf("Remove")>-1) {
+	 	  document.getElementById(cvar+ivar).innerHTML="Add to Trip Planner";
+		  document.getElementById(cvar+ivar).className = "plannerButton pb_on";
+			ipixel.document.tp_poster.action.value="remove";
+		} else {
+	 	  document.getElementById(cvar+ivar).innerHTML="Remove from Trip Planner";
+		  document.getElementById(cvar+ivar).className = "plannerButton pb_off";
+			ipixel.document.tp_poster.action.value="save";
+		}
+	}
+
+	if (document.getElementById(cvar+ivar+'b')) {
+		var str = document.getElementById(cvar+ivar+'b').innerHTML;
+		if (str.lastIndexOf("Remove")>-1) {
+	 	  document.getElementById(cvar+ivar+'b').innerHTML="Add to Trip Planner";
+		  document.getElementById(cvar+ivar+'b').className = "plannerButton pb_on";
+			//ipixel.document.tp_poster.action.value="remove";
+		} else {
+	 	  document.getElementById(cvar+ivar+'b').innerHTML="Remove from Trip Planner";
+		  document.getElementById(cvar+ivar+'b').className = "plannerButton pb_off";
+			//ipixel.document.tp_poster.action.value="save";
+		}
+	}
+
+	ipixel.document.tp_poster.cid.value=cvar;
+	ipixel.document.tp_poster.zid.value=ivar;
+	ipixel.document.tp_poster.submit();
+
+	return false;
+}
+
+
+function socialShare(socialType) {
+var myURL = 'https%3A%2F%2Fwww%2Ehockinghills%2Ecom%2Fhocking%5Fhills%5Fstate%5Fforest%2Ehtml';
+var photoURL = '';
+var socialContent = $('meta[name=description]').attr("content");
+    if (socialContent.length >= 120) {
+	socialContent = socialContent.substr(0,120) + '....' ;
+	}
+    var socialURL = "";
+    var trackingMessage = "";
+    if (typeof (socialContent) == "undefined")
+        socialContent = "";
+    switch (socialType) {
+        case "fb":
+            {
+                socialURL = "//www.facebook.com/sharer/sharer.php?u=" + myURL;
+                break;
+            }
+        case "tw":
+            {
+                socialURL = "//twitter.com/share?url=" + myURL + "&text=I want to share this with you...";
+                break;
+            }
+        case "gp":
+            {
+                socialURL = "//plus.google.com/share?url=" + myURL;
+                break;
+            }
+        case "pn":
+            {
+                socialURL = "//pinterest.com/pin/create/button/?url=" + myURL + '&media=' + photoURL + (socialContent != "" ? "&description=" + socialContent : "");
+                break;
+            }
+    }
+    if (socialType == "print") {
+        window.print();
+    }
+    else {
+        var popUp = window.open(socialURL, '', 'width=600, height=300, scrollbars, resizable');
+	        if (!popUp || typeof (popUp) === 'undefined') {
+            return true;
+        } else {
+            popUp.focus();
+            return true;
+        }
+    }
+}
+
+function calRight() {
+var allcals = document.getElementById("roomDiv").querySelectorAll(".threemos"); 
+for (i = 0; i < allcals.length; i++) {
+moveIT = allcals[i];
+//moveIT.style.backgroundColor="#ffefef";
+//var moveIT = document.getElementById("threemos");
+	x = moveIT.style.left;
+	x = x.replace("px","");
+	newx = x - 290;
+//alert(newx); 
+	//moveIT.style.left = newx + "px";
+	if (newx == -3190) {
+	moveIT.style.left = "0px"; } else {
+	moveIT.style.left = newx + "px"; }
+  }
+}
+
+function calLeft() {
+var allcals = document.getElementById("roomDiv").querySelectorAll(".threemos"); 
+for (i = 0; i < allcals.length; i++) {
+moveIT = allcals[i];
+	x = moveIT.style.left;
+	x = x.replace("px","");
+	newx = parseInt(x) + parseInt(290); 
+//alert(newx);
+	//moveIT.style.left = newx + "px";
+	if (newx <= 0) {
+	moveIT.style.left = newx + "px"; } else {
+	}
+  }
+}
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800) {
+    $('#bottomTop').fadeIn();
+  } else {
+    $('#bottomTop').fadeOut();
+  }
+
+  if (y > 400) {
+    $('#historyBack').fadeIn();
+  } else {
+    $('#historyBack').fadeOut();
+  }
+
+
+
+  if (y > 1200) {
+    $('#box').fadeIn();
+  } else {
+    $('#box').fadeOut();
+  }
+
+
+
+
+});
+
+
+$(document).ready(function(){
+
+$('#discount_bar').click(function(){
+ $('#box').animate({'left':'0px'},200);
+	document.getElementById("discount_bar_back").style.display="block";
+	document.getElementById("discount_bar").style.display="none";
+	//document.getElementById("box").style.backgroundColor="rgba(255, 255, 255, 1)";
+});
+
+$('#discount_bar_back').click(function(){
+ $('#box').animate({'left':'-420px'},200);
+	document.getElementById("discount_bar_back").style.display="none";
+	document.getElementById("discount_bar").style.display="block";
+	//document.getElementById("box").style.backgroundColor="rgba(255, 255, 255, 0)";
+});
+
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="/css/color-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/webslidemenu.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<link href='https://fonts.googleapis.com/css?family=Vast+Shadow|Bangers|Playball|Nova+Flat|Sofadi+One' rel='stylesheet' type='text/css'>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+var map;
+
+
+var hockinghillscom = new google.maps.LatLng(39.480866,-82.583926);
+
+var MY_MAPTYPE_ID = 'custom_style';
+
+var mapBounds = new google.maps.LatLngBounds(
+    new google.maps.LatLng(39.374585, -82.625860),
+    new google.maps.LatLng(39.500643, -82.499374));
+var mapMinZoom = 14;
+var mapMaxZoom = 17;
+
+var maptiler = new google.maps.ImageMapType({
+    getTileUrl: function(coord, zoom) { 
+        var proj = map.getProjection();
+        var z2 = Math.pow(2, zoom);
+        var tileXSize = 256 / z2;
+        var tileYSize = 256 / z2;
+        var tileBounds = new google.maps.LatLngBounds(
+            proj.fromPointToLatLng(new google.maps.Point(coord.x * tileXSize, (coord.y + 1) * tileYSize)),
+            proj.fromPointToLatLng(new google.maps.Point((coord.x + 1) * tileXSize, coord.y * tileYSize))
+        );
+        var y = coord.y;
+        var x = coord.x >= 0 ? coord.x : z2 + coord.x
+        if (mapBounds.intersects(tileBounds) && (mapMinZoom <= zoom) && (zoom <= mapMaxZoom))
+	return "//www.naturallyamazing.com/topotiles/" +
+            + zoom + "/" + x + "/" + y + ".png";
+        else
+            return "//www.naturallyamazing.com/topotiles/none.png";
+    },
+    tileSize: new google.maps.Size(256, 256),
+    isPng: true,
+
+    opacity: .5
+});
+
+
+      function initialize() {
+
+  var featureOpts = [
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  }
+  ];
+
+
+  var mapOptions = {
+    zoom: 11,
+    center: hockinghillscom,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID,
+    mapTypeControl: false,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+      mapTypeIds: [
+        google.maps.MapTypeId.SATELLITE,
+        google.maps.MapTypeId.TERRAIN
+      ]
+	}
+
+  };
+
+  map = new google.maps.Map(document.getElementById('map_canvas'),
+      mapOptions);
+      map.overlayMapTypes.insertAt(0, maptiler);
+
+  var styledMapOptions = {
+    name: 'Custom Style'
+  };
+
+      //  map.mapTypes.set('moon', maptiler);
+     //   map.setMapTypeId('moon');
+
+  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+    var myLatlng = new google.maps.LatLng(39.480866,-82.583926);
+    var image = '/images/lag.png';
+    var parkimage = '/images/icon_park.png';
+    var accomimage = '/images/lag_red.png';
+
+    var marker = new google.maps.Marker({
+        position: myLatlng, 
+        map: map,
+        icon: image
+   }); 
+
+
+ 
+ 
+
+}
+
+
+//this baby is fragile, it only loads if there are no js errors anywhere...............
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+
+
+
+<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+<script type="text/javascript" src="../highslide/highslide-full.packed.js"></script>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide.css" />
+
+
+
+<script type="text/javascript">
+hs.graphicsDir = '../highslide/graphics/';
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.fadeInOut = true;
+hs.dimmingOpacity = 0.8;
+hs.outlineType = 'rounded-white';
+hs.captionEval = 'this.thumb.alt';
+hs.marginBottom = 105; // make room for the thumbstrip and the controls
+hs.numberPosition = 'caption';
+hs.lang.restoreTitle = 'Click for next image';
+hs.creditsText = '';
+hs.creditsHref = '';
+hs.creditsTitle = 'view hockinghills.com member page';
+//hs.creditsText = 'hockinghills.com';
+//hs.showCredits = false;
+hs.zIndexCounter = 43215;
+hs.autoplay = true;
+
+hs.registerOverlay({
+	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+	thumbnailId: null,
+	//overlayId: 'my-overlay',
+	position: 'top right',
+	hideOnMouseOut: true,
+	opacity: 1
+});
+
+// Add the slideshow providing the controlbar and the thumbstrip
+hs.addSlideshow({
+	//slideshowGroup: 'group1',
+	interval: 3000,
+	repeat: true,
+	useControls: false
+});
+
+
+
+// Cancel the default action for image click and do next instead
+hs.Expander.prototype.onImageClick = function() {
+	return hs.next();
+};
+</script>
+
+<style type="text/css">
+	.highslide-caption {
+		padding: .5em 1.5em;
+		text-align:left;
+		color:gray;
+		line-height: 1.5em;
+	}
+
+	.highslide-container div {
+		font-size: 1em;
+	}
+</style>
+
+
+
+
+
+
+</HEAD>
+
+<BODY>
+
+
+
+
+
+<div class="overlay" id="overlay" style="display:none;"></div>
+<div class="box" id="box">
+
+<div class="boxclose" id="boxclose">
+<div style="width:40px;float:right;height:300px;"><img title="Discount Cards Save Money" id="discount_bar" src="/images/discount_bar.png"><img id="discount_bar_back" src="/images/discount_bar_back.png"></div>
+</div>
+
+<div style="height:300px;width:calc(100% - 40px);overflow:hidden;background-color:#ffffff;">
+<a href="http://www.hockinghillsdiscountcard.com" target="hhdc">
+<img src="/images/discount_card.jpg" style="width:100%;margin-top: 16px;margin-left: 4px;"></a>
+</div>
+
+</div>
+
+<div class="overlay" id="overlay2" style="display:none;"></div>
+ <div class="box" id="box2">
+   <a class="boxclose" id="boxclose2"></a>
+   <h1>Holiday Gifts</h1>   
+<a href="/giftcertificates.html"><img src="/images/gift_card.jpg" style="width:450px;"></a>
+<a href="/giftcertificates.html"><div style="margin-bottom:12px;">For Someone Special <br> Hocking Hills Gift Certificates</div></a>
+    </div>
+
+
+<div class="logo clearfix">
+<div id="logo"><a href="/index.html"><img src="/images/hockinghills_logo_brown.png"></a></div>
+
+
+
+<div class="weather">
+
+<img id="weather_icon" style="vertical-align: middle;" src="//openweathermap.org/img/w/01n.png" alt="">
+<span id="current_temperature">71&deg;F</span><br>
+<a style="text-decoration;underline;" href="/weather_info.html" title="View more detailed weather information"> Weather</a>
+
+</div>
+
+
+<div class="topbuttons">
+
+<div id="trip_planner_on"  style="float:left;display:none;"  >
+
+
+<a href="/trip_planner.html" class="button" id="tp_button"><i id="tp_suitcase" style="font-size: inherit; color:#99ff99;" class="fa fa-calendar"></i> Trip&nbsp;Planner <span class="arrow"></span></a>
+
+</div>
+
+<div id="trip_planner_off"  style="float:left;display:inline-block;" >
+	<a href="/trip_planner.html" class="button" id="tp_button"><i id="tp_suitcase" class="fa fa-calendar"></i> Trip&nbsp;Planner</a>
+</div>
+
+<a href="/order_guides.html" class="button" title="Request Electronic / Printer Information">Request&nbsp;Info</a>
+
+
+
+<DIV id=googleSearch>
+<DIV class=search>
+
+<script>
+  (function() {
+    var cx = '016002518167085047283:_ahwdl6ni8q';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+
+</DIV></DIV>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="wsmenucontainer clearfix">
+<div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft" href="#"><span></span></a></div>
+<div class="wsmenucontent overlapblackbg"></div>
+
+<div class="header">
+    <div class="wrapper clearfix"></div>
+
+
+
+<div style="margin:0 auto;max-width:1440px;background: #221405;">
+
+        <!--Main Menu HTML Code-->
+           <nav class="wsmenu slideLeft clearfix brwn-grdt">
+                <ul class="mobile-sub wsmenu-list">
+
+                  <li class="menu5p" style="border-width: 0px"><a href="" class="backone"><i class="fa fa-angle-left" style="font-size:inherit;"></i></a></li>
+
+                  <li class="menu5p"><a href="/index.html" class="active"><i class="fa fa-home" style="font-size:inherit;"></i></a></li>
+
+                  <li class="menu20p"><a href="/trip_planner.html" >Planning Your Trip <span class="arrow"></span></a>
+                    <ul style="min-width:20%;padding-top:0px;" class="wsmenu-submenu">
+		<li><a href="/photogallery.html"><i class="fa fa-angle-right"></i>Photo Gallery </a></li>
+		<li><a href="/locator_map.html"><i class="fa fa-angle-right"></i>Locator Map </a></li>
+		<li><a href="/driving_directions.html"><i class="fa fa-angle-right"></i>Directions </a></li>
+		<li><a href="/weather_info.html"><i class="fa fa-angle-right"></i>Weather </a></li>
+		<li><a href="/dining.html"><i class="fa fa-angle-right"></i>Dining </a></li>
+		<li><a href="/merchants.html"><i class="fa fa-angle-right"></i>Local Merchants </a></li>
+		<li><a href="/businesses.html"><i class="fa fa-angle-right"></i>Local Businesses </a></li>
+		<li><a href="/daytrips.html"><i class="fa fa-angle-right"></i>Nearby Attractions </a></li>
+		<li><a href="http://www.hockinghillsweddings.com" target="maps"><i class="fa fa-angle-right"></i>Hocking Hills Weddings </a></li>
+		<li><a href="http://www.hockinghillsmaps.com" target="maps"><i class="fa fa-angle-right"></i>Hocking Hills Maps </a></li>
+		<li><a href="/visitorcenters.html"><i class="fa fa-angle-right"></i>Visitor Info Centers </a></li>
+		<li><a href="/order_guides.html"><i class="fa fa-angle-right"></i>Order Visitor Guides </a></li>
+		<li style="border-width: 0px 1px 1px 1px;"><a href="/faq.html"><i class="fa fa-angle-right"></i>FAQs </a></li>
+                    </ul>
+                  </li>
+
+
+                  <li class="menu15p"><a href="#" >What's New <span class="arrow"></span></a>
+                    <ul style="min-width:15%;padding-top:0px;" class="wsmenu-submenu">
+
+		<li><a href="/calendar_of_events.html"><i class="fa fa-angle-right"></i>Calendar of Events </a></li>
+		<li><a href="/newest_listings.html"><i class="fa fa-angle-right"></i>New Businesses </a></li>
+		<li><a href="/lastminutedeals.html"><i class="fa fa-angle-right"></i>Last Minute Specials </a></li>
+		<li><a href="/discounts.html"><i class="fa fa-angle-right"></i>Current Discounts </a></li>
+		<li><a href="/specials.html"><i class="fa fa-angle-right"></i>Lodging Packages </a></li>
+		<li><a href="/lodging_reviews.html"><i class="fa fa-angle-right"></i>Lodging Reviews </a></li>
+		<li style="border-width: 0px 1px 1px 1px;"><a href="http://www.hockinghillsdiscountcard.com" target="new"><i class="fa fa-angle-right"></i>Hocking Hills Discount Card</a></li>
+	     </ul>
+                  </li>
+
+                  <li class="menu15p"><a href="#" >Activities <span class="arrow"></span></a>
+                    <ul style="min-width:20%;padding-top:0px;" class="wsmenu-submenu">
+		<li><a href="/outdoor_adventure.html"><i class="fa fa-angle-right"></i>Outdoor Adventure </a></li>
+		<li><a href="/camping.html"><i class="fa fa-angle-right"></i>Camping </a></li>
+		<li><a href="/family_outting.html"><i class="fa fa-angle-right"></i>Family Activities </a></li>
+		<li><a href="/hiking.html"><i class="fa fa-angle-right"></i>Hiking </a></li>
+		<li><a href="/art_antiques.html"><i class="fa fa-angle-right"></i>Art and Antiquing </a></li>
+		<li><a href="/hunting_fishing.html"><i class="fa fa-angle-right"></i>Hunting & Fishing </a></li>
+		<li style="border-width: 0px 1px 1px 1px;"><a href="/adventure.html"><i class="fa fa-angle-right"></i>Reserve Activities Online<i class="fa fa-calendar" style="float:right;font-size:nherit;"></i></a></li>
+                    </ul>
+                  </li>
+
+
+                  <li class="menu20p"><a href="/parks.html" >The Parks <span class="arrow"></span></a>
+                    <ul style="min-width:20%;padding-top:0px;" class="wsmenu-submenu">
+		<li><a href="/old_mans_cave.html"><i class="fa fa-angle-right"></i>Old Man's Cave </a></li>
+		<li><a href="/cedar_falls.html"><i class="fa fa-angle-right"></i>Cedar Falls </a></li>
+		<li><a href="/ash_cave.html"><i class="fa fa-angle-right"></i>Ash Cave </a></li>
+		<li><a href="/rock_house.html"><i class="fa fa-angle-right"></i>Rock House </a></li>
+		<li><a href="/cantwell_cliffs.html"><i class="fa fa-angle-right"></i>Cantwell Cliffs </a></li>
+		<li style="    font-size:15px; visibility: visible;    display: block;    color: rgb(0, 0, 0);    text-align: left;    background-color: rgb(239, 239, 239);    padding-left: 10px;">Nature Preserves </li>
+		<li><a href="/conkles_hollow.html"><i class="fa fa-angle-right"></i>Conkle's Hollow </a></li>
+		<li><a href="/rock_bridge.html"><i class="fa fa-angle-right"></i>Rock Bridge </a></li>
+		<li style="   font-size:15px; visibility: visible;    display: block;    color: rgb(0, 0, 0);    text-align: left;    background-color: rgb(239, 239, 239);    padding-left: 10px;">State Parks / Forests </li>
+		<li><a href="/lake_logan.html"><i class="fa fa-angle-right"></i>Lake Logan </a></li>
+		<li><a href="/lake_hope.html"><i class="fa fa-angle-right"></i>Lake Hope </a></li>
+		<li><a href="/tar_hollow.html"><i class="fa fa-angle-right"></i>Tar Hollow </a></li>
+		<li><a href="/clear_creek.html"><i class="fa fa-angle-right"></i>Clear Creek </a></li>
+		<li style="border-width: 0px 1px 1px 1px;"><a href="/hocking_hills_state_forest.html"><i class="fa fa-angle-right"></i>Hocking Hills State Forest </a></li>
+		<!--
+		<li><a href="/zaleski_state_forest.html"><i class="fa fa-angle-right"></i>Zaleski State Forest </a></li>
+		<li><a href="/wayne_national_forest.html"><i class="fa fa-angle-right"></i>Wayne National Forest </a></li>
+		-->
+
+
+                    </ul>
+                  </li>
+
+
+                  <li class="menu20p"><a href="/stayat.html" >Find Lodging <span class="arrow"></span></a>
+                    <ul style="min-width:20%;padding-top:0px;" class="wsmenu-submenu">
+                      <li><a href="/availability.html"><i class="fa fa-angle-right"></i>Availability Search<i class="fa fa-calendar" style="float:right;font-size:nherit;"></i></a></li>
+                      <li><a href="/cabins.html"><i class="fa fa-angle-right"></i>Cabins and Cottages </a></li>
+                      <li><a href="/lodges.html"><i class="fa fa-angle-right"></i>Lodges</a></li>
+                      <li><a href="/treehouses.html"><i class="fa fa-angle-right"></i>Treehouses</a></li>
+                      <li><a href="/campgrounds.html"><i class="fa fa-angle-right"></i>Campgrounds</a></li>
+                      <li><a href="/hotels.html"><i class="fa fa-angle-right"></i>Hotels and Inns</a></li>
+                      <li><a href="/bedandbreakfasts.html"><i class="fa fa-angle-right"></i>Bed and Breakfasts</a></li>
+                      <li style="border-width: 0px 1px 1px 1px;"><a href="/lastminutedeals.html"><i class="fa fa-angle-right"></i>Last Minute Specials</a></li>
+                    </ul>
+                  </li>
+
+
+                </ul>
+              </nav>
+        <!--Menu HTML Code--> 
+
+</div>
+</div>
+</div>
+
+
+<div class="top_photo_container IntroPhoto65"><div class="top_photo_wrapper" ><div style="background-image:url('https://www.naturallyamazing.com/photogallery/eh_hh2013_005.jpg'); background-position: 50% 50%;"><img class="lookingGlass" src="/images/hockinghills_logo_dark_220x73.png"><div class="iphoto_propertyT">&copy </div></div></div></div>
+
+<div id="photoslider">
+</div>
+
+<DIV id=container>
+   <DIV id=mainCol>
+      <DIV class=paddingHome>
+	<div id="amem_tp_top"><a class="pb_on" id="59699" href="javascript:void(0);" onclick="add2Planner('59',699);">Add to Trip Planner</a></div>
+<h2>Hocking State Forest</h2>
+
+<div>
+
+<img src="/images/rappeling2.jpg" align=right border=0 hspace=15 vspace=5 width=177 height=250></p>
+<p>The Hocking State Forest land encompases over 9000 acres. A visit to the Hocking State Forest can take you back to the past 
+and provide a glimpse of the future. The sandstone cliffs reveal a time 300 million years ago when the rivers to the east flowed 
+into a swallow sea covering what in now called Ohio. Over geologic time, the land rose and small streams cut through the rock 
+leaving the spectacular cliffs and waterfalls present today. </p>
+<p>Remnant communities of birch and hemlock tell of times when the climate was much colder and glaciers threatened (but were 
+stopped by the hills just to the north). Large diameter 400 to 500 year old trees tell of simpler times amd primitive technology. 
+More recent changes are exhibited by old road beds, abandoned homesites, and stands of pine trees now growing in what were 
+19th century corn, wheat and hay fields. </p>
+
+<a name="multipleuse"></a>
+<p><b>Multiple Use Forest Management</b> </p>
+<p><img src="/images/timberharvest.jpg" align=left border=0 hspace=15 vspace=5 width=300 height=200>Today, Hocking State Forest is managed for a variety of objectives including examples or demonstration areas of sound 
+scientific sustained multiple-use management. Timber harvesting is closely monitored so it does not exceed the rate of tree 
+growth. Erosion is actively controlled. Outdoor recreation is developed and encouraged. Habitat is provided and managed 
+for game and non-game wildlife species. The State Forest System is dedicated to providing an example of sound 
+multiple-use land stewardship. </p>
+
+<p>One of the special attractions of the Hocking State Forest area is the natural vegetation. Plant species commonly found farther north mix with typically southern 
+species to provide and unusual variety of native plant life and associated wildlife. </p>
+<p>Virginia and pitch pines, sasafras, and black, scarlet, white and chestnut oaks grow on the generally dry ridge areas. Hemlock, beech, black birch, red and sugar 
+maples, yellow poplar, white ash, red oak, basswood and hickories grow in cool gorges, moist coves and on slopes. Flowers, shrubs and ferns commonly 
+associated with these site conditions also abound. </p>
+<p>Plantations of red, white, and shortleaf pines have developed from plantings of seedlings on abondoned farm fields. </p>
+<a name="climbing"></a>
+
+<img src="/images/rappelling.jpg" align=right border=0 hspace=5 vspace=5 width=405 height=265></p>
+<p><b>Rock Climbing &amp; Rappelling Area</b> </p>
+<p>Ninety-nine acres of forest land have been set aside for rock climbing and rappelling. The area is located on Big Pine Road, one mile east 
+of Conkle's Hollow. A parking area is within easy walking distance of the rock and cliff face. There you will find excellent terrain for this 
+growing sport. Be sure to use quality equipment and climb with experienced people.</p>
+<p><a href="/maps/rock_climbing_map.pdf" target="_blank">View Map of Rock Climbing Area</a></p>
+
+<p><b>Hunting &amp; Fishing</b> </p>
+<p>Hunting and fishing are permitted within Hocking State Forest as regulated by the Division of Wildlife. Shooting is prohibited within 400 feet of any building, facility, 
+recreation area or within any designated nature preserve. Shooting from or across any road or driveway, and discharge of any firearm, except during lawful hunting, 
+are also not permitted. </p>
+
+
+
+
+<a name="rockbridge"></a>
+<p><b>State Nature Preserves</b> </p>
+<p><img src="/images/forest_rockbridge.jpg" align=left border=0 hspace=15 vspace=5 width=266 height=312>Two state nature preserves have been established in Hocking State Forest. These preserves - Sheick Hollow and Little Rocky Hollow - 
+have unique and fragile ecological systems. The preserves are managed by the ODNR Division of Natural Areas and Preserves. </p>
+<p>Sheick and Little Rocky Hollows are designated as interpretive and scientific preserves respectively, and are not open to the general 
+public. Admission is by permit only. Permits are issued by the Division of Natural Areas and Preserves who cooperatively administer the 
+preserves. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<p><b>Trail &amp; Boundary Marks</b> </p>
+<p>Many different colors of paint are seen on trees throughout the area. Yellow spots indicate the boundary between state and private land. White and/or red spots 
+are the boundaries around the nature preserves. Blue spots desingate the Buckeye Trail. Red, orange, and purple-blazed bridle trails radiate from the horse camp. 
+When traveling away from camp on these three main trails the blazed markings will be on your right. When returning to camp, they will be on your left. Green blazes 
+mark the side trails. These red, orange, purple and green blazed trails are the only designated horse trails. Horses are also allowed on the Buckeye Trail (Blue 
+Blazes) in the state forest, but must follow the bypass around the Old Man's Cave, Cedar Falls, and Ash Cave state parks. </p>
+
+
+<a name="ridingtrails"></a>
+<p><b>Horsemen's Camp</b> <img src="/images/horseback.jpg" align=right border=0 hspace=5 vspace=5 width=225 height=150></p>
+<p>Hocking State Forest offers a primative camping area for bridle trail users. The camp area is located off of the Laurel 
+Township Road 231. This facility contains 23 campsites that are large enough to accomodate most rigs. A water supply is 
+available for horses only. There is no fee for use of the area, but it is required that each camper complete a self registration 
+form. </p>
+<p>Adjacent to the Horsemen's Camp is a staging and parking area for people using the bridle trails for not more than one day. 
+This area is large enough to accomodate a number of day use rigs. (View map of <a href="/maps/hocking_forest_bridle_trails.pdf" target="_blank">bridle trails.</a>) </p>
+
+
+<p><b>General Rules for Forest Visitors</b> </p>
+<p>The Hocking State Forest area receives hundreds of thousands of visitors each year. Please respect the forest community that you find. Your consideration of other 
+visitors using the forest will help provide an enjoyable experience for all. </p>
+<p>Visitors are free to walk on state forest property during daylight hours. However, because of the many cliffs located throughout the area, extreme caution is urged 
+particularly when ice or snow is present. Because of thses hazards, Hocking State Forest closes at dark. <img src="/images/gasstorage.jpg" alt="Natural Gas Storage Area" align=right border=0 hspace=5 vspace=5 width=330 height=220></p>
+<p>Motor vehicles are restricted to roads open for public travel and designated parking areas. </p>
+<p>Use of horses is permitted on designated bridle trails only. </p>
+<p>There are no provisions for ATVs or mountain bikes. </p>
+<p>Disturbance or defacement of any property, material, natural feature or vegetation is prohibited. Berries, 
+nuts and mushrooms may be gathered and removed, except from seed orchards or nature preserves. </p>
+<p>Camping and building of fires are prohibited except in designated areas. </p>
+<p>View a <a href="/maps/hocking_forest.pdf" target="_blank">State Forest Map</a> </p>
+
+</div>
+
+
+<div style="clear:both;"></div><div class="am_header" style="margin-top:40px;">Location Map</div><div id="map_canvas" style=" width: 65%;"></div>
+
+<div id='map' style="padding-bottom:40%;width:65%;"></div>
+
+
+<div class="am_header" style="margin-top:40px;">Hocking State Forest Bridle Trail Map</div><iframe src="https://www.naturallyamazing.com/maps/park_699_bridle.jpg" class="park_pdfs"></iframe><div class="am_header" style="margin-top:40px;">Hocking State Forest Rock Climbing Area Map</div><iframe src="https://www.naturallyamazing.com/maps/park_699_climb.jpg" class="park_pdfs"></iframe><div class="am_header" style="margin-top:40px;">Calendar of Events</div><div style="margin-left:40px;">there are no events listed at this time....</div>
+<div class="am_header" style="margin-top:40px;">Photo Gallery <span style="font-size:.7em;text-transform:lowercase;font-weight:200;">(click on an image to enlarge)</span></div>
+
+<div class="highslide-gallery" style="position: relative;width: 100%;max-height: 520px;overflow: hidden;">
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_050516_149.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_050516_149.jpg' alt=''/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_050516_100.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_050516_100.jpg' alt='Osprey at Lake Logan - A rare find, for me at least'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_032616_111.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_032616_111.jpg' alt=''/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_009.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_009.jpg' alt='Bluejay'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_070.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_070.jpg' alt='Baby, lost without mom - Rescued deer that already had lost its fear'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_007.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_007.jpg' alt='Redtail Hawk'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_006.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_006.jpg' alt='Turkey Buzzard'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/eh_hh2013_031.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/eh_hh2013_031.jpg' alt='Whitetail Deer'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_018.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_018.jpg' alt='Red Fox'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_010.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_010.jpg' alt='Racoon'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_008.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_008.jpg' alt='My First Eagle Shot -  I used a 500 MM mirror lens, I had to crop it a lot, it was totally over-exposed, but i'm just glad I was able to get one. Shot from the berm of Rt. 33 near Rt. 328.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/eh_hh2013_005.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/eh_hh2013_005.jpg' alt='Downy Woodpecker'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_011.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_011.jpg' alt='Owl'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_154.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_154.jpg' alt='Fall Heron - These guys are really easy to shoot. Some of my earlier work.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_184.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_184.jpg' alt='Don't Play With Your Food! - Patience pays off.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_036.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_036.jpg' alt='Heron With Food in Flight - This one wanted to eat in peace, so it flew off right after the catch.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_005.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_005.jpg' alt='Redtail Hawk'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_007.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_007.jpg' alt='Patiently Waiting - If you are as patient, you may see him catch his lunch.Lake Logan'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_033.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_033.jpg' alt='You Talkin' To Me - Can't believe it let me walk up so close to get this shot. She didn't realize I was there, and when she turned around I caught this expression.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_002.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_002.jpg' alt='Cardinal'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_012.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_012.jpg' alt='Green Heron Siblings -  We watched these herrons grow from the nest that was right beside the road at Lake Logan.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_143.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_143.jpg' alt='Napping Muskrat - At Lake Logan. He appears to be napping, there was no activity here.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_164.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_164.jpg' alt='Swan Family, Fall on the Lake - I spent he better part of the morning following this family                                                          down the lake untill I had this backdrop, one of my favorites. '/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_172.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_172.jpg' alt='Black Heron - That is what I call them. This was my only photo op with this bird, so glad to get the opportunity.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/tw_hh2013_004.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/tw_hh2013_004.jpg' alt='Red Fox Pup'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_032.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_032.jpg' alt='The Swans in a Morning Mist -   Our first Swan family, and it seemed the whole county was in a tizzy over them. On one of my many morning trips I caught this neat scene.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_041.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_041.jpg' alt='Egret At Lake Logan - These beautiful birds show up at Lake Logan every once in a while, and I felt fortunate to show up at the same time. It was early morning and the water was calm. I love reflections! '/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_214.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_214.jpg' alt='Baby Wood Ducks - Thank -you for the pose. Shot at Lake Logan of course'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_246.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_246.jpg' alt='Dive! - I watched this Kingfisher from perched to full dive. He hit the water,and came up with his lunch in a matter of seconds.'/></a>
+
+
+
+	<a style="border:0px;" class='highslide' href='https://www.naturallyamazing.com/photogallery/bs_hh2013_175.jpg'  onclick="return hs.expand(this)">
+		<img class="gallery_thumb" src='https://www.naturallyamazing.com/photogallery/thumbs/bs_hh2013_175.jpg' alt='Just Ducky - Another of my drive-by shootings. Sometimes they just make it so easy.'/></a>
+
+
+
+</div>
+
+<div style="position:relative;margin-top:40px;text-align:right; "><div id="amem_tp_bottom"><a class="pb_on" id="59699b" href="javascript:void(0);" onclick="add2Planner('59',699);">Add to Trip Planner</a></div></div>
+<div style="clear:both;"></div>
+
+<div id="container_menu_line" >
+
+<div class="am_header" style="border-top:2px dashed #999999;margin-top:40px;padding-top:10px;">Parks Areas within Hocking Hills State Park</div>
+<a class="menuText" href="/old_mans_cave.html">Old Man's Cave</a><span class="menusepa">|</span>
+<a class="menuText" href="/cedar_falls.html">Cedar Falls</a><span class="menusepa">|</span>
+<a class="menuText" href="/ash_cave.html">Ash Cave</a><span class="menusepa">|</span>
+<a class="menuText" href="/rock_house.html">Rock House</a><span class="menusepa">|</span>
+<a class="menuText" href="/cantwell_cliffs.html">Cantwell Cliffs</a>
+
+<div class="am_header" style="margin-top:0px;padding-top:10px;">Nearby Parks and Nature Preserves</div>
+<a class="menuText" href="/conkles_hollow.html">Conkle's Hollow</a><span class="menusepa">|</span>
+<a class="menuText" href="/rock_bridge.html">Rock Bridge</a><span class="menusepa">|</span>
+<a class="menuText" href="/lake_logan.html">Lake Logan</a><span class="menusepa">|</span>
+<a class="menuText" href="/lake_hope.html">Lake Hope</a><span class="menusepa">|</span>
+<a class="menuText" href="/tar_hollow.html">Tar Hollow</a><span class="menusepa">|</span>
+<a class="menuText" href="/clear_creek.html">Clear Creek</a><span class="menusepa">|</span>
+<a class="menuText" href="/hocking_hills_state_forest.html">Hocking Hills State Forest</a><span class="menusepa">|</span>
+<a class="menuText" href="/wayne_national_forest.html">Wayne National Forest</a>
+
+</div>
+
+
+      </DIV>
+   </DIV>
+</DIV>
+
+
+
+<div id="historyBack"><a  style="display:none;" class="navangle backone" title="previous page"><i class="fa fa-angle-left fa-4x" style="line-height:50px;"></i></a></div>
+
+<div id="bottomTop"><a  id="topslow" class="navangle" title="top of page"><i class="fa fa-angle-up fa-4x" style="line-height:30px;"></i></a></div>
+
+<div id=footer>
+
+
+<div class="footer_menu_line" >
+<a class="menuText"  href="/parks.html">Visit the Parks</a><span class="menusepa">|</span><a class="menuText"  href="/calendar_of_events.html">Calendar of Events</a><span class="menusepa">|</span><a class="menuText"  href="/stayat.html">Find Lodging</a><span class="menusepa">|</span><a class="menuText"  href="/trip_planner.html">Your Trip Planner</a>
+</div>
+
+<div class="footer_menu_line" >
+<a class="menuText" href="/index.html">Home</a><span class="menusepa">|</span><a class="menuText" href="/our_partners.html">Our Link Partners</a><span class="menusepa">|</span><a class="menuText" href="/contact_us.html">Contact Us</a><span class="menusepa">|</span><a class="menuText" href="https://secure.hockinghills.com/business-friends/signon.asp">For Members</a><span class="menusepa">|</span><a class="menuText" href="/sitemap.html">Site Map</a> 
+</div>
+
+<div style="clear:both;"></div>
+
+<div class="footer_menu_line" >
+<div class=copyright><span style="white-space: nowrap;">Copyright &copy; 1996-2018 hockinghills.com.</span> <span style="white-space: nowrap;">
+<a href="/terms.html">Terms of Use</a><span class="menusepa"></span><a href="/privacy.html">Privacy Policy</a></span>
+</div>
+
+</div>
+  
+<script>   
+$(document).ready(function(){
+$("#topslow").click(function(){
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+});
+
+$(".backone").click(function(){
+          window.history.back();
+});
+
+$("#cmore").click(function(){
+          $('html, body').animate({ scrollTop: $("#top_tools_index").offset().top }, 500);
+});
+
+});
+</script>
+
+
+<div><img alt="Hocking Hills Hiker" src="/images/hiker.gif" width=398 height=38></div>
+
+
+
+
+</div>
+<div id="footerfooter">
+
+<div id="footerFeatured">
+<div style="color:#ffffff;margin-bottom:10px;">Featured Businesses and Events</div>
+
+<div style="width:300px;display: inline-block; font-size:.7em;text-align: center; white-space: nowrap;  overflow: hidden;vertical-align: middle;"><a href="/visitus.html?a=r&id=592&url=http://www.thespottedhorseranch.com&p=footerAD"  target="_blank" ><img style="width:280px;" title="Spotted Horse Ranch" src="/images/members/member_592_23_1.jpg" width="280" border="0"></a><div><a style="text-decoration:none;color:#ffffff;" href="/visitus.html?a=r&id=592&url=http://www.thespottedhorseranch.com&p=footerAD"  target="_blank" >Spotted Horse Ranch</a></div></div><div style="width:300px;display: inline-block; font-size:.7em;text-align: center; white-space: nowrap;  overflow: hidden;vertical-align: middle;"><a href="/visitus.html?a=r&id=439&url=http://www.bobevans.com/&p=footerAD"  target="_blank" ><img style="width:280px;" title="Bob Evans Restaurant - Logan" src="/images/members/member_439_19_1.jpg" width="280" border="0"></a><div><a style="text-decoration:none;color:#ffffff;" href="/visitus.html?a=r&id=439&url=http://www.bobevans.com/&p=footerAD"  target="_blank" >Bob Evans Restaurant - Logan</a></div></div><div style="width:300px;display: inline-block; font-size:.7em;text-align: center; white-space: nowrap;  overflow: hidden;vertical-align: middle;"><a href="/visitus.html?a=r&id=1441&url=http://www.cutabovecabins.com&p=footerAD&ppc=Y"  target="_blank" ><img style="width:280px;" title="Cut Above Cabins" src="/images/members/member_1441_14_1.jpg" width="280" border="0"></a><div><a style="text-decoration:none;color:#ffffff;" href="/visitus.html?a=r&id=1441&url=http://www.cutabovecabins.com&p=footerAD&ppc=Y"  target="_blank" >Cut Above Cabins</a></div></div><div style="width:300px;display: inline-block; font-size:.7em;text-align: center; white-space: nowrap;  overflow: hidden;vertical-align: middle;"><a href="/visitus.html?a=r&id=434&url=https://www.cherryridgeretreat.com&p=footerAD&ppc=Y"  target="_blank" ><img style="width:280px;" title="Cherry Ridge Retreat" src="/images/members/member_434_14_1.jpg" width="280" border="0"></a><div><a style="text-decoration:none;color:#ffffff;" href="/visitus.html?a=r&id=434&url=https://www.cherryridgeretreat.com&p=footerAD&ppc=Y"  target="_blank" >Cherry Ridge Retreat</a></div></div>
+
+</div>
+
+
+
+</div>
+
+<div id="tpdiv" style="display:none; visibility:hidden;">
+<iframe name="ipixel" id="ipixel"  src="/tp_poster.asp" width="450" height="250" frameborder=0 bgcolor="#f3efe9" allowtransparency="YES"></iframe>
+
+<form name="linker" id="linker" action="/sending_you_customers.html" method="get" target="new">
+<input type="hidde" id="linkera" name="a" value="">
+<input type="hidde" id="linkeru" name="url" value="">
+</form>
+
+<form name="traveldates" id="traveldates" action="/includes/set_travel_dates.asp" method="post" target="myDates">
+<input type="hidde" id="arrival_date" name="arrival_date" value="" placeholder="arrival">
+<input type="hidde" id="depart_date" name="depart_date" value="" placeholder="depart">
+<input type="hidde" id="member_types" name="member_types" value="" placeholder="member types">
+<input type="hidde" id="amenity_types" name="amenity_types" value="" placeholder="amenity types">
+<input type="hidde" id="interest_types" name="interest_types" value="" placeholder="interest types">
+<input type="hidde" id="occupancy_types" name="occupancy_types" value="" placeholder="occupancy_types">
+<input type="hidde" id="uRh" name="uRh" value="" placeholder="location">
+</form>
+<iframe name="myDates" id="myDates"  src="/null.html" width="400" height="200" frameborder=0 bgcolor="#f3efe9" allowtransparency="YES"></iframe>
+
+</div>
+
+
+
+
+<script>
+if (localStorage.pageCount) {
+    localStorage.pageCount = Number(localStorage.pageCount) + 1;
+} else {
+    localStorage.pageCount = 1;
+}
+
+    //localStorage.visits = "10/21/2015,11/15/2015,11/22/2015";
+
+if (localStorage.visits) {
+	var str = localStorage.visits;
+	var n = str.indexOf("4/12/2018"); 
+	if (n == -1) {
+    localStorage.visits = localStorage.visits + ",4/12/2018";
+	}
+} else {
+    localStorage.visits =  "4/12/2018";
+}
+
+    localStorage.viewing = "hocking_forest";
+
+if ("1/1/1955" == "1/1/1955") {
+//alert("supply arrival date" + localStorage.arrivalDate);
+    localStorage.arrivalDate = "";
+    localStorage.departDate = "";
+} else {
+    localStorage.arrivalDate = "1/1/1955";
+    localStorage.departDate = "1/1/1955";
+}
+
+    localStorage.tripVars = "_";
+
+</script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2055616-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body></html>
+

@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<title>The Shimberg Center at the University of Florida</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="css/menuesBlue.css" type="text/css" />
+
+
+<style type="text/css">
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+        padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+        margin-top: -180px; /* negative value of footer height */
+        height: 180px;
+        clear:both;}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+div#statement{
+ width:100%;
+ font:bold 13px verdana, sans-serif;
+ color:rgb(80,80,144);
+ margin-bottom:14px;
+ margin-right:0;
+}
+
+.menu ul li#home.selected a{
+ /* background:#dedede; */
+}
+
+div#side{
+ width:230px;
+}
+
+#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }
+
+#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #99a4bd !important;            color: #ffffff !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #076eeb !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #000000 !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #ffffff !important;          }
+
+.twtr-widget h3 {
+display: none!important;
+
+}
+img.twtr-profile-img{
+ display:none!important;
+// background: url(http://pluto.shimberg.uf.edu/favicon.ico) no-repeat 0 0;
+ background: url(/favicon.ico) no-repeat 0 0;
+}
+
+.twtr-widget h4{
+ position:relative;
+ left:-32px!important;
+}
+
+/* bring the author's stuff */
+* {margin:0;padding:0}
+body {
+ font-family:verdana, sans-serif;
+ background-color:#fff;
+ line-height:1.3em;
+ color:#444444
+}
+
+/* IE8 hack to get it to apply margin auto centering to element inside this one */
+#wrap {width:100%}
+
+/* Header
+#header {padding:15px 0 15px 0;height:75px;border-bottom: 1px solid #97A2BA}
+#header #logo {width:800px;margin:0 auto;padding:0 10px 0 10px}
+#header img.logo {margin-top:26px}
+#header #logo #lang {width:100px;float:right;height:55px;margin-right:60px}
+*/
+/* Content Area */
+#main {width:850px;margin:0 auto;clear:both;padding-right:10px;padding-left:10px}
+
+
+#content {width:530px;float:left;padding:30px 0 25px 0}
+
+
+/* Sidebar */
+#side {
+  width:290px ;float:right;padding:30px 5px 25px 10px;
+  xborder:1px solid;
+}
+div#twitter{
+  position:relative;
+  left:-18px;
+}
+div#statement{
+  font-size:1.2em!important;
+  margin-left:-18px!important;
+  margin-bottom:24px!important;
+  margin-top:26px;
+}
+
+
+/* Footer */
+#footer {background: #444444 ;color:#ffffff;font-size:11px;font-family:Verdana, Arial, sans-serif}
+#footer2 {background-color: #444444;color:#ffffff;font-size:11px;font-family:Verdana, Arial, sans-serif;height:140px}
+#footer a, #footer2 a {color:#ffffff;text-decoration:underline}
+#footer a:hover, #footer2 a:hover {color:#804249;text-decoration:underline}
+#footer a:visited, #footer2 a:visited  {color:#ffffff;text-decoration:underline}
+#footer p, #footer2 p {margin:0 0 15px 0}
+#footer p.axe img, #footer2 p.axe img {margin-bottom:-7px}
+#foot {width:800px;margin:0 auto;background: url('images/duct-tape.jpg') no-repeat;height:140px;line-height:1.1em;padding:0 10px 0 10px}
+#foot2 {width:800px;margin:0 auto;height:140px;line-height:1.1em;padding:0 10px 0 10px}
+#foot #left {width:400px;float:left;padding-top:72px}
+#foot #right {width:250px;float:right;text-align:right;padding-top:72px}
+#foot2 #left {width:450px;float:left;padding-top:45px}
+#foot2 #right {width:250px;float:right;text-align:right;padding-top:45px}
+
+
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix {display: inline-block}
+* html .clearfix {height: 1%}
+.clearfix {display: block}
+
+/* my changes ... */
+ div#wrap div#main div#content div#stuff div#img_container img{ width:95%;}
+#header{
+ background-color:#003366;
+ height:135px;
+ margin:0 auto!important;
+ padding-bottom:0!important;
+}
+
+div.logos{
+ width:660px;
+ margin:0 auto!important;
+ padding:0!important;
+ padding-top:34px!important;
+}
+
+#logo1{
+ float:left;
+ padding-right:0;
+ padding:0!important;
+ position:relative;
+ left:-100px;
+}
+
+#logo2{
+ margin-top:4px;
+ margin-right:184px;
+ float:right;
+ position:relative;
+ left:-80px;
+ top:0px;
+}
+
+#footer {
+  background-color:#999;
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 10px;
+  padding: 22px 0 0 22px;
+  line-height:.9em!important;
+}
+
+#footer p:first-child{
+ font-size:1.5em;
+ line-height:1.1em;
+ xcolor:rgb(230,200,66);
+ color:rgb(55,111,165);
+ xcolor:rgb(55,222,200);
+ xcolor:rgb(231,231,243);
+ font-size:1.8em;
+}
+
+ #footer p:nth-child(2),
+ #footer p:nth-child(3){
+ line-height:.9em!important;
+  padding:0;
+  margin:6px 0;
+  xcolor:rgb(231,231,243);
+  font-size:1.2em;
+  color:#fff!important;
+}
+
+
+#footer div{
+ margin-top:12px;
+}
+
+#footer div a:link{
+ padding:1px 2px;
+ text-decoration:none;
+ color:#dedede;
+ border:1px solid transparent;
+ border-width:1px 0;
+ color:rgb(155,155,255);
+ font-size:11px;
+ color:#dedede;
+ font-weight:bold;
+}
+
+#footer div a:hover{
+ border:1px dotted #dedede;
+ border:1px dotted rgb(230,200,66);
+ border-width:1px 0;
+ color:#fff;
+}
+
+#footer div a:visited{
+ color:rgb(200,200,50);
+ color:rgb(255,199,86);
+ color:#eee;
+}
+
+#footer div a:visited:hover{
+ border:1px dotted #fff;
+}
+
+#footer div#bottomLogo img{
+ width:99px; float:right;
+ position:relative;
+ xtop:-69px;
+ padding-right:29%;
+}
+
+#footer .foot{
+width:66%;
+margin:0 auto!important;
+padding-top:15px;
+}
+#footer div.foot_left{
+margin-left:11px;
+float:left;
+min-width:433px;
+overflow:hidden;
+
+
+}
+#footer div#bottomLogo{
+float:right;
+position:relative;
+top:2px;
+margin-right:5%;
+}
+
+#foot_links{
+clear:both;
+}
+
+
+div#side div#publications iframe{
+ margin-top:-28px;
+ padding-top:1px;
+ width:100%;
+ height: 900px;
+ overflow:hidden;
+ margin-left:-6px;
+}
+
+div#header div.menu{
+ display:inline-block!important;
+ position:relative;
+ top:24px;
+ left:0;
+ width:100%;
+ background-color:#737ca2;
+// height:27px;
+ xmargin:0 auto!important;
+ padding:0!important;
+ padding-top:12px!important;
+ padding-left:17%!important;
+}
+
+div.menu ul li a strong{
+  position:relative;
+  top:4px;
+}
+
+div.menu ul li#home.selected a,
+div.menu ul li#home.selected:hover a{
+  padding-bottom:4px!important;
+  background:#fff;
+  z-index:9;
+}
+
+/* take care of the first element which should not appear */
+div.menu ul:first-child li:first-child{
+  xbackground:none;
+  display:none;
+}
+/*reset the second levels elements */
+.menu ul:first-child li:hover ul li, .menu ul a:hover ul li {
+ xbackground:#a2a8c1;
+ xcolor:#dedede;
+ display:inline;
+}
+div#content iframe{
+ width:100%!important;
+ height:550px!important;
+ overflow:hidden;
+ border:0;
+ xpadding-left: 30px;
+
+}
+
+div#statement{
+ width:100%;
+ font:bold 13px verdana, sans-serif;
+ color:rgb(80,80,144);
+ margin-bottom:14px;
+ margin-right:0;
+}
+
+.menu ul li#home.selected a{
+ /* background:#dedede; */
+}
+
+div#side{
+ width:230px;
+}
+
+#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }
+
+#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #99a4bd !important;            color: #ffffff !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #076eeb !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #000000 !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #ffffff !important;          }
+
+.twtr-widget h3 {
+display: none!important;
+
+}
+img.twtr-profile-img{
+ display:none!important;
+// background: url(http://pluto.shimberg.uf.edu/favicon.ico) no-repeat 0 0;
+ background: url(/favicon.ico) no-repeat 0 0;
+}
+
+.twtr-widget h4{
+ position:relative;
+ left:-32px!important;
+}
+
+#footer div#foot{
+   margin:.8em auto!important;
+}
+
+
+div#content h4{
+  padding-top:4px!important;
+}
+
+/* ie shows blue border around links */
+a img
+{
+  border:none;
+}
+
+div.caption{
+  background-color:#666!important;
+   font:12px verdana, sans-serif;
+  color:#fff;
+}
+
+
+div#mainHomepage {
+  width:850px;
+  margin:0 auto;
+  padding:50px;
+}
+
+div#statement{
+ width:100%;
+ font: bold 10px verdana, sans-serif;
+ color:rgb(80,80,144);
+ margin-bottom:8px;
+ margin-right:0;
+}
+
+.menu ul li#home.selected a{
+ /* background:#dedede; */
+}
+
+div#side{
+ width:230px;
+}
+
+div#news{
+ position:relative;
+ top:-30px;
+ font-size:90%;
+ padding: 10px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* targetting chrome */
+iframe#myslideshowContainer{
+ margin-bottom:0px!important;
+}
+
+</style>
+<!-- This conditional is for IE8 and IE6 and earlier- 8 needs that display:table -->
+<!--[if !IE 7] 
+<style type="text/css">
+        #wrap {display:table;height:100%}
+</style>
+[endif]-->
+</head>
+
+<body class="">
+<!-- start header -->
+<div id="wrap">
+<div id="header">
+  <div class="logos">
+    <div id="logo1">
+      <a href="/"><img src="/images/shimberg_logo.png" alt="Shimberg Center" /></a>
+    </div>
+    <div id="logo2">
+      <span><a href="http://ufl.edu"><img src="/images/UFsignature.png" alt="University of Florida" /></a></span>
+    </div>
+  </div>
+ 
+
+
+
+
+ <div class="menu">
+    <ul>
+    <li style="width:22px;border-left:1px solid #aaa;">&nbsp;</li>
+
+    <li  id="home" class="selected"><a href="index.html"><strong style="font-size:.8em;">HOME</strong></a></li>
+
+    <li ><a href="aboutUs2.html"><strong style="font-size:.8em;">ABOUT US</strong>
+      <!--[if IE 7]><!-->
+      </a>
+      <!--<![endif]-->
+      <!--[if lte IE 6]><table><tr><td><![endif]-->
+      <ul>
+          <li><a href="aboutUs2.html" title="About Us">About the Shimberg Center</a></li>
+          <li><a href="supporters.html" title="Supporters">Supporters</a></li>
+          <li><a href="team.html" title="Staff">Staff</a></li>
+          <li><a href="contact.html" title="Contact Information">Contact Us</a></li>
+          <li style="height:35px;  background:  url(images/menuBottomBlue.png) no-repeat; background-position:0px -15px; "></li>
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+      </li>
+
+    <li ><a href="#"><strong style="font-size:.8em;">RESEARCH</strong>
+      <!--[if IE 7]><!-->
+      </a>
+      <!--<![endif]-->
+      <!--[if lte IE 6]><table><tr><td><![endif]-->
+      <ul>
+          <li><a href="fl_housingNeeds.html" title="Florida's Affordable Houding Needs">Florida's Affordable Housing Needs</a></li>
+          <li><a href="preserving_aff_rental_housing.html" title="Preserving Rental Housing">Preserving Rental Housing</a></li>
+          <li><a href="fl_housingSuitableModel.html " title="Housing Suitability Model">Housing Suitability Model</a></li>
+          <li><a href="green_and_healthy_housing.html" title="Green and Healthy Housing">Green and Healthy Housing</a></li>
+          <li><a href="children.html" title="Children and Youth">Children and Youth</a></li>
+          <li style="height:35px;  background:  url(images/menuBottomBlue.png) no-repeat; background-position:0px -15px;"></li>
+        </ul>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+      </li>
+    <li ><a href="publications3.html"><strong style="font-size:.8em;">PUBLICATIONS</strong></a> </li>
+      <li><a href="http://www.flhousingdata.shimberg.ufl.edu/"><strong style="font-size:.8em;">DATA CLEARINGHOUSE </strong>
+        <!--[if IE 7]><!-->
+        </a>
+        <!--<![endif]-->
+        <!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul>
+          <li><a href="http://www.flhousingdata.shimberg.ufl.edu/">Home</a></li>
+          <li><a href="http://www.flhousingdata.shimberg.ufl.edu/a/profiles" title="Profiles">Profiles</a></li>
+          <li><a class="sub1" href="http://www.flhousingdata.shimberg.ufl.edu/comparison_quick_custom.html" title="Comparisons &raquo;"> Comparisons </a>   </li>
+          <li><a class="sub1" href="http://www.flhousingdata.shimberg.ufl.edu/a/geo_portal/" title="GeoPortal">GeoPortal </a> </li>
+          <li><a href="http://www.flhousingdata.shimberg.ufl.edu/datasets.html" title="All Datasets">All Datasets</a></li>
+            <li style="height:35px;  background:  url(images/menuBottomBlue.png) no-repeat; background-position:0px -15px; "></li>
+          </ul>
+          <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+        </li>
+
+    </ul>
+  </div>
+
+
+   <div class="content"><!-- why this? -->
+   </div>
+</div>
+<!-- end header -->
+
+
+<!--[if IE]>
+<style type="text/css">
+iframe#myslideshowContainer{
+ position:relative;
+ left:-22px;
+
+}
+</style>
+<![endif]-->
+
+
+
+<!--[if lte IE 7]>
+<style type="text/css">
+iframe#myslideshowContainer{
+ margin-bottom:0!important;
+ padding-bottom:0!important;
+}
+</style>
+<![endif]-->
+
+<!--[if gt IE 7]>
+<style type="text/css">
+iframe#myslideshowContainer{
+ margin-bottom:14px!important;
+ padding-bottom:14px!important;
+
+
+}
+</style>
+<![endif]-->
+
+
+  <div id="mainHomepage">
+    <div id="content">
+
+  <!-- slideshow here -->
+
+  <!--        <iframe id="myslideshowContainer" src="slider.html" height="400px" width="500" frameborder="0"  scrolling="no"></iframe> -->
+<div id="news"> 
+
+<h4>Shimberg Center launches <a href="http://ElderData.shimberg.ufl.edu">Housing Florida's Older Adults: By the Numbers</a></h4>
+
+<p>
+  This new website provides state and county data on demographics, financial status, health, and housing for the 3.3 million Florida residents age 65 and older. <a href="http://ElderData.shimberg.ufl.edu">Explore the data.</a>
+
+</p><br/>
+
+<h4>Research Brief: More Floridians are renting their homes, but affordable units are scarce</h4>
+
+<p>
+  An October 2017 <a href="http://www.shimberg.ufl.edu/publications/FL_2017_RMS_fact_sheet.pdf">research brief</a>
+  on Florida's affordable rental housing needs shows that the state added 560,713 renters between 2005 and 2015.
+  These include new households formed, households moving to the state, and homeowners shifting to renting.
+  The state lost 130,267 owner households during the same period. <br /><br />
+
+  In 2015, 744,662 low-income renters paid more than 40 percent of their income for housing--a 35 percent from 2005. <br /><br />
+
+  The Center also released briefs on regional rental housing trends in
+    <a href="http://www.shimberg.ufl.edu/publications/SoFL_2017_RMS_fact_sheet.pdf"> South Florida</a>,
+    <a href="http://www.shimberg.ufl.edu/publications/NEFL_2017_RMS_fact_sheet.pdf">Northeast Florida</a>,
+    <a href="http://www.shimberg.ufl.edu/publications/Orl_2017_RMS_fact_sheet.pdf">the Orlando area</a>,
+    <a href="http://www.shimberg.ufl.edu/publications/TPA_2017_RMS_fact_sheet.pdf">and the Tampa Bay area</a>.
+</p><br />
+
+<h4>Report: Homeless students in Florida trail their housed peers in attendance, academic, and disciplinary indicators</h4>
+
+<p>
+  Over 72,000 children and youth in Florida were identified as homeless in the 2015-16 school year. These students are temporarily doubled up others or are staying in hotels and motels, shelters, transitional housing, and unsheltered locations. A new <a href="http://www.shimberg.ufl.edu/children.html">study</a> by the Shimberg Center and Miami Homes for All explores the impacts of homelessness and housing instability on education by focusing on these students’ experiences. <a href="http://www.shimberg.ufl.edu/children.html">Learn more</a>.
+</p><br />
+
+<h4>UF receives HUD grant to retrofit housing for people with disabilities</h4>
+
+<p>
+  A team led by Shimberg Center professor Sherry Ahrentzen was recently awarded a grant from the U.S. Department of Housing and
+  Urban Development to develop methods to retrofit small multifamily buildings to make them affordable, accessible and
+  aesthetically pleasing. <br /><br />
+
+  The study will use virtual reality technology to enable persons with disabilities to test designs before they are built.
+  For example, a person with arthritis can test modifications to make doors easier to open by wearing a haptic glove,
+  which allows users to touch and grip virtual objects.  </p><br />
+<p>
+  The interdisciplinary research team includes Dr. Ahrentzen, Nicole Campbell, and Bill O’Dell from the Shimberg Center;
+  Stephen Bender, School of Architecture; Ravi Srinivasan, Robert Ries, and Xiaojie Lu, Rinker School of Construction Management;
+  Randy Cantrall, IFAS Department of Family, Youth and Community Services; Sherrilene Classen and Linda Struckmeyer,
+  Department of Occupational Therapy; and Erin Cunningham, Department of Interior Design.
+</p>
+
+</div>
+  </div>
+
+  <div id="side">
+    <div id="statement">The Shimberg Center for Housing Studies was established at the University of Florida in 1988 to promote safe, decent and affordable housing and related community development throughout the state of Florida.
+    </div>
+
+    <!-- twitter -->
+    <div id="twitter"><a class="twitter-timeline" href="https://twitter.com/ShimbergCenter" data-widget-id="347821878196457472">Tweets by @ShimbergCenter</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    
+  </div> <!-- side -->
+
+</div>
+<!--</div> -->
+<div id="footer">
+<div class="foot">
+ <div class="foot_left">
+  <p><strong>The Shimberg Center for Housing Studies</strong></p>
+  <p>College of Design, Construction &amp; Planning  M.E Rinker, Sr. School of Construction Management</p>
+  <p>P.O. Box 115703 Gainesville, FL 32611-5703 / Tel: 1-352-273-1192 / Fax: 1-352-392-4364</p>
+  <div id="foot_links"><a href="aboutUs2.html">About</a> | <a href="contact.html">Contact Shimberg</a> |  <a href="site_map.html">Site Map</a>
+  </div>
+  <div id="bottomLogo"><a href="http://www.ufl.edu"><img src="http://flhousingdata.shimberg.ufl.edu/images/UF_Wordmark.png" alt="UF wordmark" /></a></div>
+  </div>
+</div>
+</div>
+</div><!--closes initial wrap -->
+
+</body>
+</html>
+

@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <!--
+  Copyright (C) 2006-2009 by Jef Poskanzer <jef@mail.acme.com>.
+  All rights reserved.
+  -->
+
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <style type="text/css">
+      form { margin-top: 0; margin-bottom: 0; }
+      .control { margin: 2px; }
+      .output { margin: 2px; border: 2px outset #cccc99; background-color: #cccc99; padding: 2px; }
+      input.button { border-width: 1px; }
+      @media print
+	{
+        .noprint { display: none; }
+	}
+    </style>
+    <link rel="icon" sizes="16x16" type="image/gif" href="/resources/images/icon_acme_16.gif" />
+    <link rel="icon" sizes="32x32" type="image/gif" href="/resources/images/icon_acme_32.gif" />
+    <link rel="icon" sizes="64x64" type="image/gif" href="/resources/images/icon_acme_64.gif" />
+    <link rel="icon" sizes="128x128" type="image/gif" href="/resources/images/icon_acme_128.gif" />
+    <title>ACME Mapper 2.1</title>
+    <link rel="canonical" href="//mapper.acme.com/" />
+  </head>
+
+
+  <body style="width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;" onload="Setup();">
+
+
+    <noscript><h1>You must enable JavaScript to use this page.</h1></noscript>
+
+
+    <div id="map" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;"></div>
+
+    <div id="ad" class="noprint" style="margin-top: 9px; margin-left: 9px;">
+      <script async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- small square mapper ad -->
+      <ins class="adsbygoogle"
+	style="display:inline-block;width:200px;height:200px"
+	data-ad-client="ca-pub-5759188606642566"
+	data-ad-slot="9903031188"></ins>
+      <script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div id="controlPanel" class="noprint" style="position: absolute; bottom: 16px; right: 5px; z-index: 500; display: none; background-color: #99cc99; border: 2px outset #99cc99; font-family: sans-serif; font-size: small;">
+
+      <div id="controlPanelMinimized" style="display: none;">
+          <a href="javascript:DeMinimizeControlPanel();"><img width="25" height="25" style="border: 0; padding: 0; margin: 0; display: table;" src="images/smallearth2.gif" alt="globe" /></a>
+      </div>
+
+      <table id="controlPanelFull" border="0" cellspacing="0" cellpadding="0"><tbody>
+
+        <tr><td>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+            <td align="left"><div class="control">
+	      <b>ACME Mapper 2.1</b>
+	    </div></td>
+            <td align="center"><a href="javascript:MinimizeControlPanel();"><img id="globe" width="25" height="25" style="border-width: 0;" src="images/smallearth2.gif" alt="globe" /></a></td>
+            <td align="right" style="vertical-align: text-bottom;"><div class="control" id="print" title="Print this map"><a href="javascript:Print();"><img width="16" height="16" style="border-width: 0;" src="//acme.com/resources/images/print.gif" alt="print" />&nbsp;Print</a></div></td>
+            <td align="right" style="vertical-align: text-bottom;"><div class="control" title="Email this map to someone"><a id="email"><img width="16" height="17" style="border-width: 0;" src="//acme.com/resources/images/email.gif" alt="email" />&nbsp;Email</a></div></td>
+
+            <td align="right" style="vertical-align: text-bottom;"><div class="control" title="Generate a URL for this map"><a id="linkToThisPage"><img width="16" height="16" style="border-width: 0;" src="//acme.com/resources/images/link.gif" alt="link" />&nbsp;Link&nbsp;to&nbsp;this&nbsp;page</a></div></td>
+          </tr></tbody></table>
+        </td></tr>
+
+        <tr><td>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+            <td align="left"><div id="coords" class="output" style="width: 26em; text-align: center;" title="Current map coordinates">&nbsp;</div></td>
+            <td id="markButton" align="right" title="Place a marker here"><form method="get" action="javascript:void(0);" onsubmit="MarkHere();"><div class="control"><input type="submit" class="button" value="Mark" /></div></form></td>
+          </tr></tbody></table>
+        </td></tr>
+
+        <tr id="nearbyItem" title="Nearby places"><td>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+            <td align="center"><div class="output" id="nearbyResults" style="width: 32em; height: 2.5em; overflow: hidden;">&nbsp;</div></td>
+          </tr></tbody></table>
+        </td></tr>
+
+        <tr id="findItem" title="Find an address, city, ZIP code, lat/long coordinate"><td>
+          <form method="get" action="javascript:void(0);" onsubmit="Find();">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+              <td align="left" style="width: 100%"><div class="control"><input id="findQuery" name="q" style="width: 23em;" /></div></td>
+              <td align="right"><div class="control"><input type="submit" class="button" value="Find" /></div></td>
+            </tr></tbody></table>
+	  </form>
+        </td></tr>
+
+        <tr><td>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+            <td align="left" title="About the ACME Mapper"><div class="control"><a href="about.html">About</a></div></td>
+            <td align="center" id="hereButton" title="Move the map to your current location"><form method="get" action="javascript:void(0);" onsubmit="GoHere();"><div class="control"><input type="submit" class="button" value="Here" /></div></form></td>
+            <td align="center" id="markersButton" title="Open the Markers panel"><form method="get" action="javascript:void(0);" onsubmit="MarkersOpen();"><div class="control"><input type="submit" class="button" value="Markers" /></div></form></td>
+            <td align="center" id="linksButton" title="Open the Links panel"><form method="get" action="javascript:void(0);" onsubmit="LinksOpen();"><div class="control"><input type="submit" class="button" value="Links" /></div></form></td>
+            <td align="center" title="Open the Options panel"><form method="get" action="javascript:void(0);" onsubmit="OptionsOpen();"><div class="control"><input type="submit" class="button" value="Options" /></div></form></td>
+            <td align="right" title="Back to the ACME Labs web page"><div class="control"><a href="//acme.com/">ACME&nbsp;Labs</a></div></td>
+          </tr></tbody></table>
+        </td></tr>
+
+      </tbody></table>
+    </div>
+
+
+    <div id="block" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; display: none; background-color: #808080; opacity: .50; filter: alpha(opacity=50);"></div>
+
+
+    <div id="findPanel" style="position: absolute; bottom: 0.5in; right: 3in; z-index: 1000; background-color: #cccccc; border: 2px outset #cccccc; display: none;">
+      <table border="0"><tbody>
+        <tr>
+          <td align="center"><b>Find Results</b></td>
+        </tr>
+        <tr>
+          <td>Did you mean one of these locations?</td>
+        </tr>
+        <tr>
+          <td><div id="findResults" style="max-height: 25em; overflow: auto;">&nbsp;</div></td>
+        </tr>
+        <tr>
+          <td align="right" title="Close this panel"><form method="get" action="javascript:void(0);" onsubmit="FindClose();"><div><input type="submit" class="button" value="Cancel" /></div></form></td>
+        </tr>
+      </tbody></table>
+    </div>
+
+
+    <div id="markersPanel" style="position: absolute; bottom: 0.5in; right: 3in; z-index: 1000; background-color: #ffffff; border: 2px outset #ffffff; display: none;">
+      <table border="0"><tbody>
+
+        <tr>
+          <td align="center"><b>Markers</b></td>
+        </tr>
+
+        <tr>
+          <td><hr /></td>
+        </tr>
+
+        <tr>
+          <td id="markersCaption">&nbsp;</td>
+        </tr>
+
+	<tr>
+	  <td>
+	    <div style="max-height: 6in; max-width: 6in; overflow: auto;">
+              <table id="markersTable" border="0">
+	      </table>
+	    </div>
+	  </td>
+	</tr>
+
+        <tr>
+          <td><hr /></td>
+        </tr>
+
+        <tr>
+          <td align="right">
+	    <table border="0"><tbody><tr>
+	      <td id="deleteAllButton" title="Delete all markers"><form method="get" action="javascript:void(0);" onsubmit="MarkersDeleteAllButton();"><div><input type="submit" class="button" value="Delete All" /></div></form></td>
+              <td title="Close this panel"><form method="get" action="javascript:void(0);" onsubmit="MarkersClose();"><div><input type="submit" class="button" value="Close" /></div></form></td>
+	    </tr></tbody></table>
+	  </td>
+        </tr>
+
+      </tbody></table>
+    </div>
+
+
+    <div id="linksPanel" style="position: absolute; bottom: 0.5in; right: 3in; z-index: 1000; background-color: #cccccc; border: 2px outset #cccccc; display: none;">
+      <table border="0"><tbody>
+        <tr>
+          <td colspan="2" align="center"><b>Links</b></td>
+        </tr>
+        <tr>
+          <td colspan="2">Automatically updated for the current location.</td>
+        </tr>
+        <tr><td colspan="2"><hr /></td></tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconGoogle.gif" alt="google" /></td>
+	  <td><a id="googleLink">Google Maps</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconFlickr.gif" alt="flickr" /></td>
+	  <td><a id="flickrLink">Photos on Flickr</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconGeocaching.gif" alt="geocaching" /></td>
+	  <td><a id="geocachesLink">Nearby Geocaches</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconGeocaching.gif" alt="geocaching" /></td>
+	  <td><a id="benchmarksLink">Nearby Benchmarks</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconGlobetrotting.gif" alt="globetrotting" /></td>
+	  <td><a id="globetrottingLink">Virtual Globetrotting</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconPedometer.gif" alt="pedometer" /></td>
+	  <td><a id="pedometerLink">Gmaps Pedometer</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconDatapointed.gif" alt="crayon" /></td>
+	  <td><a id="crayonLink">Street Grids Colored By Orientation</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconGeourl.gif" alt="geourl" /></td>
+	  <td><a id="geourlLink">GeoURL</a></td>
+        </tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconTiger.gif" alt="tiger" /></td>
+	  <td><a id="tigerLink">TIGER</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconTopozone.gif" alt="topozone" /></td>
+	  <td><a id="topozoneLink">TopoZone</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconMultimap.gif" alt="multimap" /></td>
+	  <td><a id="multimapLink">MultiMap.com</a></td>
+	</tr>
+        <tr>
+	  <td><img width="16" height="16" src="images/faviconAcme.gif" alt="acme" /></td>
+	  <td><a id="mapper1Link">ACME Mapper 1.0</a></td>
+	</tr>
+        <tr><td colspan="2"><hr /></td></tr>
+        <tr>
+          <td colspan="2" align="right" title="Close this panel"><form method="get" action="javascript:void(0);" onsubmit="LinksClose();"><div><input type="submit" class="button" value="Close" /></div></form></td>
+        </tr>
+      </tbody></table>
+    </div>
+
+
+    <div id="optionsPanel" style="position: absolute; top: 1in; bottom: 1in; right: 3in; overflow: auto; z-index: 1000; background-color: #cccccc; border: 2px outset #cccccc; display: none;">
+      <table border="0"><tbody>
+        <tr>
+          <td colspan="2" align="center"><b>Options</b></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Map Widgets:</td>
+        </tr>
+        <tr>
+          <td title="Show or hide the streetview widget"><input type="checkbox" id="streetviewCheckbox" onclick="OptionsChanged();" />Streetview</td>
+          <td title="Show or hide the zoom widget"><input type="checkbox" id="zoomCheckbox" onclick="OptionsChanged();" />Zoom</td>
+        </tr>
+        <tr>
+          <td title="Show or hide the map type widget"><input type="checkbox" id="mapTypeCheckbox" onclick="OptionsChanged();" />Map Type</td>
+          <td title="Show or hide the scale widget"><input type="checkbox" id="scaleCheckbox" onclick="OptionsChanged();" />Scale</td>
+        </tr>
+        <tr>
+          <td title="Show or hide the crosshairs at the map's center"><input type="checkbox" id="crosshairsCheckbox" onclick="OptionsChanged();" />Crosshairs</td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Control Panel:</td>
+        </tr>
+        <tr>
+          <td title="Show or hide the spinning globe"><input type="checkbox" id="globeCheckbox" onclick="OptionsChanged();" />Spinning Globe</td>
+          <td title="Show or hide the Print link"><input type="checkbox" id="printCheckbox" onclick="OptionsChanged();" />Print</td>
+        </tr>
+        <tr>
+          <td title="Show or hide the Email link"><input type="checkbox" id="emailCheckbox" onclick="OptionsChanged();" />Email</td>
+          <td title="Show or hide 'Link to this page'"><input type="checkbox" id="linkToThisPageCheckbox" onclick="OptionsChanged();" />'Link to this page'</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <span title="Show or hide the coordinates box"><input type="checkbox" id="coordsCheckbox" onclick="OptionsChanged();" />Coords</span>
+            <select id="coordsSelect" onclick="OptionsChanged();" title="Output format of coordinates">
+              <option value="numeric">d.ddd d.ddd</option>
+              <option value="d">NS d.ddd EW d.ddd</option>
+              <option value="dm">NS d m.mmm' EW d m.mmm'</option>
+              <option value="dms">NS d m' s" EW d m' s"</option>
+              <option value="geotags">geotags</option>
+              <option value="GeoRSS">GeoRSS</option>
+              <option value="csv">CSV</option>
+              <option value="utm">UTM</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td title="Show or hide the nearby places box"><input type="checkbox" id="nearbyCheckbox" onclick="OptionsChanged();" />Nearby Places</td>
+          <td title="Show or hide the Find box"><input type="checkbox" id="findCheckbox" onclick="OptionsChanged();" />Find Box</td>
+        </tr>
+        <tr>
+          <td title="Show or hide everything related to markers"><input type="checkbox" id="markersCheckbox" onclick="OptionsChanged();" />Markers</td>
+          <td title="Show or hide the Links button"><input type="checkbox" id="linksCheckbox" onclick="OptionsChanged();" />Links</td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2">Map Interface:</td>
+        </tr>
+        <tr>
+          <td title="Make a marker for Find results"><input type="checkbox" id="markOnFindCheckbox" onclick="OptionsChanged();" />Mark On Find</td>
+          <td title="Add keyboard commands for moving and zooming"><input type="checkbox" id="keyboardShortcutsCheckbox" onclick="OptionsChanged();" />Keyboard Shortcuts</td>
+        </tr>
+        <tr>
+          <td title="Zoom and center the map on a single-click"><input type="checkbox" id="clickZoomCheckbox" onclick="OptionsChanged();" />Click Zoom</td>
+          <td title="Zoom and center the map on a double-click"><input type="checkbox" id="doubleClickZoomCheckbox" onclick="OptionsChanged();" />Double-Click Zoom</td>
+        </tr>
+        <tr>
+          <td title="Zoom in and out with the mouse wheel"><input type="checkbox" id="mouseWheelZoomCheckbox" onclick="OptionsChanged();" />Mouse Wheel Zoom</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+	    Units:
+            <select id="unitsSelect" onclick="OptionsChanged();" title="Unit system to use">
+              <option value="si">meters / kilometers</option>
+              <option value="us">feet / miles</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+	  <td colspan="2">
+	    Display up to
+            <select id="nPhotosSelect" onclick="OptionsChanged();" title="How many photos to show">
+              <option>0</option>
+              <option>5</option>
+              <option>10</option>
+              <option>20</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+	    photos from:
+	  </td>
+        </tr>
+        <tr>
+          <td title="Display geotagged photos from flickr"><input type="checkbox" id="flickrCheckbox" onclick="OptionsChanged();" /><span style="color: #0063dc;">flick</span><span style="color: #ff0084;">r</span></td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right" title="Close this panel"><form method="get" action="javascript:void(0);" onsubmit="OptionsClose();"><div><input type="submit" class="button" value="Close" /></div></form></td>
+        </tr>
+      </tbody></table>
+    </div>
+
+
+    <!--
+	New Google Maps API keys:
+	https://developers.google.com/maps/documentation/javascript/get-api-key
+    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyDCaFJ7q-5J8N_eqk6ET7oeic1ZwDWmkeA&amp;libraries=geometry"></script>
+
+    <script src="//acme.com/javascript/acme.namespace.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.utils.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.maps3.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.maps3.maptypes.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.maps3.zoom5.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.maps3.photomarker.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.cache.jsm" type="text/javascript"></script>
+    <script src="//acme.com/javascript/acme.editinplace.jsm" type="text/javascript"></script>
+
+    <script src="//acme.com/javascript/json2.jsm" type="text/javascript"></script>
+
+    <script src="mapper.js" type="text/javascript"></script>
+
+  </body>
+
+</html>

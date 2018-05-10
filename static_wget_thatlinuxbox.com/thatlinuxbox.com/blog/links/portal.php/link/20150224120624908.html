@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<!-- Hacking: see NOTES and TODO in this directory -->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perl 6 Programming Language</title>
+     <meta name="description" content="Home page for Perl 6, the newest member of the family of languages known as Perl." />
+    <meta name="verify-v1" content="p7bEStVpDsW4ixm9YbF1ck02FRQfdA97ZL9mJnt0iQ0=" />
+    <meta name="google-site-verification" content="fDTmO9fcCRRgBqbKirQidKJ6nhTqnolHrKrgwVWJxZA" /> 
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/style.css?v=1" rel="stylesheet">
+    
+</head>
+<body>
+<div class="bg">
+  <div class="container">
+
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li id="nav-home" class="active"
+          ><a href="/">Home</a></li>
+         <li id="nav-downloads"
+          ><a href="/downloads">Download</a></li>
+         <li id="nav-community"
+          ><a href="/community/">Community</a></li>
+         <li id="nav-docs" 
+          ><a href="https://docs.perl6.org">Documentation</a></li>
+         <li id="nav-res" 
+          ><a href="/resources/">Resources</a></li>
+         <li id="nav-modules" 
+          ><a href="https://modules.perl6.org/">Modules</a></li>
+         <li id="nav-fun" 
+          ><a href="/fun/">Fun</a></li>
+         <li id="nav-whatever"
+          ><a href="/whatever/">Whatever</a></li>
+         <li id="nav-faq"
+          ><a href="https://docs.perl6.org/language/faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <header id="welcome-header" class="row lead">
+    <div class="col-sm-12">
+      <div class="panel" style="box-shadow: 1px 1px 3px rgba(0, 0, 0, .3)">
+        <div class="panel-primary">
+          <div class="panel-heading">
+              <h3 class="panel-title"><b>NEW:</b> Perl&nbsp;6 Rakudo Star 2018.01 Production Distribution of Perl 6 Released!</h3>
+          </div>
+          <div class="panel-body trim" style="background: #fafafa">
+            <p style="font-size: 81%">
+            Read the <a href="http://rakudo.org/2018/01/29/announce-rakudo-star-release-2018-01/">release announcement</a> or <a href="/downloads">download Rakudo Star and try out Perl&nbsp;6</a>!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <h1>The <b>Perl&nbsp;6</b> Programming Language</h1>
+
+      <a href='https://github.com/perl6/mu/raw/master/misc/camelia.txt'
+        class="pull-right"><img
+        src="camelia-logo.png" alt="»ö«"
+        class="img-responsive"
+      ></a>
+
+      <p>Hi, my name is Camelia.  I'm the spokesbug for Perl&nbsp;6,
+        the plucky little sister of <a href="https://www.perl.org/">Perl&nbsp;5</a>.
+        Like her world-famous big
+        sister, Perl&nbsp;6 intends to carry forward the high ideals of
+        the Perl community. Perl&nbsp;6 is
+        currently being developed by a team of dedicated and enthusiastic
+        volunteers. You can help too. The only requirement is that you know
+        how to be nice to all kinds of people (and butterflies). Go to
+        <a href="https://webchat.freenode.net/?channels=perl6&amp;nick="
+          >#perl6 (irc.freenode.net)</a>
+        and someone will be glad to help you
+          <a href="/getting-started/">get started</a>.
+      </p>
+    </div>
+  </header>
+
+  <main class="row">
+    <div class="col-sm-9 row">
+      <section class="col-sm-4">
+        <div class="well">
+          <h3 class="h2 trim-top">Jump in!</h3>
+          <p>Rakudo is a compiler for Perl&nbsp;6 code. Install it and you're
+            all set to run Perl&nbsp;6 programs!</p>
+          <a href="/downloads/"
+            class="btn btn-primary btn-lg btn-block"
+              style="white-space: normal; font-size: 120%">
+            Download Rakudo Perl&nbsp;6
+          </a>
+        </div>
+      </section>
+      <div class="col-sm-8">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Many new features greatly advance our tradition of expressive and feature-rich programming
+            </h3>
+          </div>
+          <div class="panel-body trim">
+            <ul class="shy-list">
+                <li>Object-oriented programming including generics, roles and multiple dispatch</li>
+                <li>Functional programming primitives, lazy and eager list evaluation, junctions, autothreading and hyperoperators (vector operators)</li>
+                <li>Parallelism, concurrency, and asynchrony including multi-core support</li>
+                <li>Definable grammars for pattern matching and generalized string processing</li>
+                <li>Optional and gradual typing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"
+            ><a href="#samp-grammars" role="tab"
+              data-toggle="tab">Grammars</a>
+          </li>
+          <li role="presentation"><a href="#samp-async" role="tab" data-toggle="tab">Async &amp; Parallelism</a></li>
+          <li role="presentation"><a href="#samp-rats" role="tab" data-toggle="tab">Rational Numbers</a></li>
+          <li role="presentation"><a href="#samp-lazy" role="tab" data-toggle="tab">Lazy Evaluation</a></li>
+          <li role="presentation"><a href="#samp-more" role="tab" data-toggle="tab">More…</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="samp-grammars">
+    <div class="highlight"><pre><span class="Statement">grammar</span> Parser {
+    <span class="Statement">rule</span>  TOP  {<span class="Constant"> I </span><span class="Special">&lt;</span>love<span class="Special">&gt;</span><span class="Constant"> </span><span class="Special">&lt;</span>lang<span class="Special">&gt;</span><span class="Constant"> </span>}
+    <span class="Statement">token</span> love {<span class="Constant"> </span><span class="Special">'</span><span class="Constant">♥</span><span class="Special">'</span><span class="Constant"> </span><span class="Special">|</span><span class="Constant"> love </span>}
+    <span class="Statement">token</span> lang {<span class="Constant"> </span><span class="Special">&lt; </span><span class="Constant">Perl Rust Go Python Ruby </span><span class="Special">&gt;</span><span class="Constant"> </span>}
+}
+
+<span class="Identifier">say</span> Parser<span class="Statement">.</span>parse<span class="Statement">:</span> <span class="Special">'</span><span class="Constant">I ♥ Perl</span><span class="Special">'</span><span class="Statement">;</span>
+<span class="Comment"># OUTPUT: ｢I ♥ Perl｣ love =&gt; ｢♥｣ lang =&gt; ｢Perl｣</span>
+
+<span class="Identifier">say</span> Parser<span class="Statement">.</span>parse<span class="Statement">:</span> <span class="Special">'</span><span class="Constant">I love Rust</span><span class="Special">'</span><span class="Statement">;</span>
+<span class="Comment"># OUTPUT: ｢I love Rust｣ love =&gt; ｢love｣ lang =&gt; ｢Rust｣</span></pre></div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="samp-async">
+    <div class="highlight"><pre>start { <span class="Identifier">sleep</span> <span class="Constant">1.5</span><span class="Statement">;</span> <span class="Identifier">print</span> <span class="Special">&quot;</span><span class="Constant">hi</span><span class="Special">&quot;</span> }
+await Supply<span class="Statement">.</span>from-list(<span class="Special">&lt;</span><span class="Constant">A B C D E F</span><span class="Special">&gt;</span>)<span class="Statement">.</span>throttle<span class="Statement">:</span> <span class="Constant">2</span><span class="Statement">,</span> {
+    <span class="Identifier">sleep</span> <span class="Constant">0.5</span><span class="Statement">;</span>
+    <span class="Statement">.</span><span class="Identifier">print</span>
+}
+
+<span class="Comment"># OUTPUT: ABCDhiEF</span></pre></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="samp-rats">
+    <div class="highlight"><pre><span class="Comment"># No floating point noise:</span>
+<span class="Identifier">say</span> <span class="Constant">0.1</span> <span class="Statement">+</span> <span class="Constant">0.2</span> <span class="Statement">==</span> <span class="Constant">0.3</span><span class="Statement">;</span>        <span class="Comment"># OUTPUT: True</span>
+<span class="Identifier">say</span> (<span class="Constant">1</span><span class="Statement">/</span><span class="Constant">13</span> <span class="Statement">+</span> <span class="Constant">3</span><span class="Statement">/</span><span class="Constant">7</span> <span class="Statement">+</span> <span class="Constant">3</span><span class="Statement">/</span><span class="Constant">8</span>)<span class="Statement">.</span><span class="Identifier">perl</span><span class="Statement">;</span> <span class="Comment"># OUTPUT:  &lt;641/728&gt;</span></pre></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="samp-lazy">
+            <div class="highlight"><pre><span class="Comment"># Infinite list of primes:</span>
+<span class="Special">my</span> <span class="Identifier">@</span><span class="Identifier">primes</span> <span class="Statement">=</span> <span class="Statement">^</span>∞ <span class="Statement">.</span><span class="Identifier">grep</span><span class="Statement">:</span> <span class="Statement">*.</span><span class="Identifier">is</span><span class="Statement">-</span>prime<span class="Statement">;</span>
+<span class="Identifier">say</span> <span class="Special">&quot;</span><span class="Constant">1001ˢᵗ prime is </span><span class="Identifier">@</span><span class="Identifier">primes</span>[<span class="Constant">1000</span>]<span class="Special">&quot;</span><span class="Statement">;</span>
+
+<span class="Comment"># Lazily read words from a file</span>
+<span class="Statement">.</span><span class="Identifier">say</span> <span class="Statement">for</span> <span class="Special">'</span><span class="Constant">50TB.file.txt</span><span class="Special">'</span><span class="Statement">.</span><span class="Type">IO</span><span class="Statement">.</span>words<span class="Statement">;</span></pre></div>
+            </div>
+          <div role="tabpanel" class="tab-pane" id="samp-more">
+            <p class="lead text-center well"
+              style="padding-top: 20px;">Want to see more?
+                <a href="https://examples.perl6.org/"
+              class="btn btn-primary">Visit Perl&nbsp;6 examples page</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">Recent Blog Posts
+            <small>
+                <a href="http://pl6anet.org/">[view more]</a>
+                <a href="http://pl6anet.org/atom.xml"
+                  class="recent_blogs_rss">RSS</a>
+            </small>
+          </h3>
+        </div>
+        <div class="panel-body trim">
+          <ul id="recent_blog_posts">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <section class="col-sm-6 col-md-5ths">
+        <h4><a href="/community/">Community</a></h4>
+        <ul class="shush-list">
+          <li><a href="/community/irc">#perl6 IRC channel</a>: <a href="irc://irc.freenode.net/%23perl6">system IRC client</a>
+          or&nbsp;<a href="http://webchat.freenode.net/?channels=perl6&amp;nick=">chat live in your browser</a></li>
+          <li><a href="/community/rosettacode">Perl&nbsp;6 on Rosetta Code</a>, <a href="http://pl6anet.org/">Blogs</a></li>
+        </ul>
+
+        <a href="/community/" class="btn btn-success">More</a>
+      </section>
+
+      <section class="col-sm-6 col-md-5ths">
+        <h4><a href="/resources/">Resources</a></h4>
+        <ul class="shush-list">
+          <li><a href="/getting-started/">Getting started</a></li>
+          <li><a href="https://docs.perl6.org/">Perl&nbsp;6 Documentation</a></li>
+          <li><a href="https://docs.perl6.org/language/5to6">Perl&nbsp;5 to Perl 6</a>,
+              an introduction for Perl&nbsp;5 programmers</li>
+        </ul>
+          <a href="/resources/" class="btn btn-success">More</a>
+      </section>
+
+      <section class="col-sm-6 col-md-5ths">
+        <h4><a href="https://modules.perl6.org/">Modules</a></h4>
+
+        <ul class="shush-list">
+          <li><a href="https://modules.perl6.org/">Perl&nbsp;6 modules
+              directory</a></li>
+          <li><a href="https://modules.perl6.org/dist/zef:github">Zef</a> Perl&nbsp;6
+              module manager</li>
+        </ul>
+
+        <a href="https://modules.perl6.org/" class="btn btn-success">More</a>
+      </section>
+
+      <section class="col-sm-6 col-md-5ths">
+        <h4><a href="/compilers/">Compilers</a></h4>
+        <ul class="shush-list">
+            <li><a href="http://rakudo.org/">Rakudo</a>, a compiler running on
+                <a href="http://moarvm.com/">MoarVM</a>,
+                 the JVM and other backends.</li>
+        </ul>
+        <a href="/compilers/" class="btn btn-success">More</a>
+      </section>
+
+      <section class="col-sm-6 col-md-5ths">
+        <h4><a href="/specification/">Language Design</a></h4>
+        <ul class="shush-list">
+          <li><a href="https://design.perl6.org/">Synopsis</a> - official Perl&nbsp;6 design documents</li>
+        </ul>
+        <a href="/specification/" class="btn btn-success">More</a>
+      </section>
+
+      <p class="col-sm-12 text-center"
+        ><i class="glyphicon glyphicon-info-sign"></i>
+          If you want to contribute to this page,
+        <a href="/about/">look here for instructions</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js.js"></script>
+
+</body>
+</html>

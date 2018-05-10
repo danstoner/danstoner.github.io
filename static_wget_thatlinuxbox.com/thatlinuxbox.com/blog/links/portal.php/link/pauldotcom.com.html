@@ -1,0 +1,745 @@
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<!-- wp_header -->
+<script>(function(html){ html.className = html.className.replace(/\bno-js\b/,'js'); if (html.classList) { html.classList.add( 'js' ); } else { html.className += ' js'; } })(document.documentElement);</script><title>The Security Podcast Network - Security Weekly</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Security Weekly is a security podcast network for information security professionals, by information security professionals. We produce free podcasts!"/>
+<link rel="canonical" href="https://securityweekly.com/" />
+<link rel="publisher" href="https://plus.google.com/105785252917077150109"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Security Podcast Network - Security Weekly" />
+<meta property="og:description" content="Security Weekly is a security podcast network for information security professionals, by information security professionals. We produce free podcasts!" />
+<meta property="og:url" content="https://securityweekly.com/" />
+<meta property="og:site_name" content="Security Weekly" />
+<meta property="og:image" content="https://securityweekly.com/wp-content/uploads/2014/01/SecurityWeekly-640x360.png" />
+<meta property="og:image:secure_url" content="https://securityweekly.com/wp-content/uploads/2014/01/SecurityWeekly-640x360.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Security Weekly is a security podcast network for information security professionals, by information security professionals. We produce free podcasts!" />
+<meta name="twitter:title" content="The Security Podcast Network - Security Weekly" />
+<meta name="twitter:site" content="@securityweekly" />
+<meta name="twitter:image" content="https://securityweekly.com/wp-content/uploads/2014/01/SecurityWeekly-640x360.png" />
+<meta name="twitter:creator" content="@securityweekly" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/securityweekly.com\/","name":"Security Weekly","potentialAction":{"@type":"SearchAction","target":"https:\/\/securityweekly.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/securityweekly.com\/","sameAs":["https:\/\/www.facebook.com\/secweekly","https:\/\/www.linkedin.com\/company-beta\/10572790","https:\/\/plus.google.com\/105785252917077150109","https:\/\/youtube.com\/securityweeklytv","https:\/\/twitter.com\/securityweekly"],"@id":"#organization","name":"Security Weekly","logo":"https:\/\/securityweekly.com\/wp-content\/uploads\/2017\/06\/SW1920x1080.jpg"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//securityweekly.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//dev.securityweekly.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Security Weekly &raquo; Feed" href="https://securityweekly.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/securityweekly.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='themify_cache_header-css'  href='https://securityweekly.com/wp-content/uploads/themify/cache/magazine/styles/11430/single/header-2723407904.css?ver=3.1.9' type='text/css' media='all' />
+<script type='text/javascript' src='https://securityweekly.com/wp-content/uploads/themify/cache/magazine/scripts/11430/single/header-2723407904.js?ver=3.1.9'></script>
+<link rel='https://api.w.org/' href='https://securityweekly.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://securityweekly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://securityweekly.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://wp.me/P6EcIr-2Ym' />
+<link rel="alternate" type="application/json+oembed" href="https://securityweekly.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecurityweekly.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://securityweekly.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecurityweekly.com%2F&#038;format=xml" />
+
+<!-- This site is using AdRotate v4.12 Professional to display their advertisements - https://ajdg.solutions/products/adrotate-for-wordpress/ -->
+<!-- AdRotate CSS -->
+<style type="text/css" media="screen">
+	.g { margin:0px; padding:0px; overflow:hidden; line-height:1; zoom:1; }
+	.g img { height:auto; }
+	.g-col { position:relative; float:left; }
+	.g-col:first-child { margin-left: 0; }
+	.g-col:last-child { margin-right: 0; }
+	@media only screen and (max-width: 480px) {
+		.g-col, .g-dyn, .g-single { width:100%; margin-left:0; margin-right:0; }
+	}
+</style>
+<!-- /AdRotate CSS -->
+
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//i0.wp.com'/>
+<link rel='dns-prefetch' href='//i1.wp.com'/>
+<link rel='dns-prefetch' href='//i2.wp.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>
+
+
+
+<link href="https://securityweekly.com/wp-content/uploads/2017/06/favicon.ico" rel="shortcut icon" /> 
+
+<title>The Security Podcast Network - Security Weekly</title>
+	
+    <meta name="description" content="Security Weekly is the best podcast network created for security professionals, by security professionals. We features interviews with security luminaries, how-to technical segments and security news coverage.">
+    <meta name="keywords" content="security podcast, security podcasts, cyber security podcast, hacking podcast, hacking podcasts, computer security podcast, information security podcast, defensive security podcast, offensive security podcast, cyber security podcasts, hacking, hacking tutorials, Paul Asadoorian">
+
+<script>
+
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+
+</script>	<script>
+		var tf_mobile_menu_trigger_point = 1200;
+	</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://i1.wp.com/securityweekly.com/wp-content/uploads/2016/10/SW135x135.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i1.wp.com/securityweekly.com/wp-content/uploads/2016/10/SW135x135.png?fit=135%2C135&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://i1.wp.com/securityweekly.com/wp-content/uploads/2016/10/SW135x135.png?fit=135%2C135&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i1.wp.com/securityweekly.com/wp-content/uploads/2016/10/SW135x135.png?fit=135%2C135&#038;ssl=1" />
+
+<!-- BEGIN GADWP v5.3.2 Universal Analytics - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-55741712-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Analytics -->
+</head>
+
+<body class="home page-template-default page page-id-11430 themify-fw-3-1-9 magazine-1-8-1 skin-black webkit not-ie default_width sidebar1 no-touch">
+<script type="text/javascript">
+	function themifyMobileMenuTrigger() {
+		if( document.body.clientWidth <= tf_mobile_menu_trigger_point ) {
+			jQuery( 'body' ).addClass( 'mobile_menu_active' );
+		} else {
+			jQuery( 'body' ).removeClass( 'mobile_menu_active' );
+		}
+	}
+	themifyMobileMenuTrigger();
+	jQuery( window ).resize( themifyMobileMenuTrigger );
+</script>
+<div id="pagewrap" class="hfeed site">
+
+	<div id="headerwrap">
+
+		<div id="nav-bar">
+			<div class="pagewidth clearfix">
+									<a id="menu-icon-top" href="#"><i class="fa fa-list-ul icon-list-ul"></i></a>
+										<nav id="top-nav-mobile-menu" class="sidemenu sidemenu-off" role="navigation">
+						<ul id="top-nav" class="top-nav menu-name-watchlisten"><li id="menu-item-11356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11356"><a href="https://securityweekly.com/watch/">Watch</a></li>
+<li id="menu-item-11335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11335"><a href="https://securityweekly.com/listen/">Listen</a></li>
+<li id="menu-item-11355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11355"><a href="https://securityweekly.com/live/">Live Stream</a></li>
+</ul>					</nav>
+									
+				<div class="social-widget">
+					<div id="themify-social-links-3" class="widget themify-social-links"><ul class="social-links horizontal">
+							<li class="social-link-item twitter font-icon icon-medium">
+								<a href="http://www.twitter.com/securityweekly" ><i class="fa fa-twitter" ></i>  </a>
+							</li>
+							<!-- /themify-link-item -->
+							<li class="social-link-item facebook font-icon icon-medium">
+								<a href="https://www.facebook.com/secweekly" ><i class="fa fa-facebook" ></i>  </a>
+							</li>
+							<!-- /themify-link-item -->
+							<li class="social-link-item youtube font-icon icon-medium">
+								<a href="https://youtube.com/securityweeklytv" ><i class="fa fa-youtube" ></i>  </a>
+							</li>
+							<!-- /themify-link-item -->
+							<li class="social-link-item linkedin font-icon icon-medium">
+								<a href="https://www.linkedin.com/company-beta/10572790" ><i class="fa fa-linkedin" ></i>  </a>
+							</li>
+							<!-- /themify-link-item -->
+							<li class="social-link-item mailing-list font-icon icon-medium">
+								<a href="https://securityweekly.com/insider/" ><i class="ti-email" ></i>  </a>
+							</li>
+							<!-- /themify-link-item --></ul></div>
+									</div>
+				<!-- /.social-widget -->
+
+				
+			</div>
+		</div>
+		<!-- /#nav-bar -->
+
+		
+		<header id="header" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+
+			
+			<div class="hgroup">
+				<div id="site-logo"><a href="https://securityweekly.com" title="Security Weekly"><img src="https://securityweekly.com/wp-content/uploads/2017/07/webbanner.png" alt="Security Weekly" title="Security Weekly" /></a></div>				<div id="site-description" class="site-description"><span>The Security Podcast Network</span></div>			</div>
+
+			<a id="menu-icon" href="#"><i class="fa fa-list-ul icon-list-ul"></i></a>
+			<nav id="mobile-menu" class="sidemenu sidemenu-off" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+				<ul id="main-nav" class="main-nav menu-name-main-menu"><li id='menu-item-8718' class="menu-item menu-item-type-post_type menu-item-object-page" ><a  href="https://securityweekly.com/subscribe/">Subscribe</a> </li>
+<li id='menu-item-8979' class="menu-item menu-item-type-post_type menu-item-object-page" ><a  href="https://securityweekly.com/shows/">Shows</a> </li>
+<li id='menu-item-11723' class="menu-item menu-item-type-post_type menu-item-object-page" ><a  href="https://securityweekly.com/hosts/">Hosts</a> </li>
+<li id='menu-item-11293' class="menu-item menu-item-type-post_type menu-item-object-page" ><a  href="https://securityweekly.com/our-sponsors/">Sponsors</a> </li>
+<li id='menu-item-2481' class="menu-item menu-item-type-custom menu-item-object-custom" ><a  href="/blog">Blog</a> </li>
+<li id='menu-item-2912' class="menu-item menu-item-type-custom menu-item-object-custom" ><a  href="https://wiki.securityweekly.com/">Show Archives</a> </li>
+<li id='menu-item-14066' class="menu-item menu-item-type-post_type menu-item-object-page" ><a  href="https://securityweekly.com/ondemand/">Webcasts</a> </li>
+</ul>				<!-- /#main-nav -->
+			</nav>
+
+			
+		</header>
+		<!-- /#header -->
+
+        
+	</div>
+	<!-- /#headerwrap -->
+
+	<div class="header-widget pagewidth">
+			</div>
+	<!--/header widget -->
+
+	
+	<div id="body" class="clearfix">
+
+    <!-- hook content: themify_layout_before --><div align="center"><p><div class="g g-1"><div class="g-single a-36"><a href="https://layeredinsight.com/products/" target="_blank"><img src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/02/banner_LayeredInsight.png?ssl=1" /></a></div></div></p></div><!-- /hook content: themify_layout_before -->
+
+<!-- layout-container -->
+<div id="layout" class="pagewidth clearfix">
+
+	<div id="contentwrap">
+
+				<!-- content -->
+		<div id="content" class="clearfix">
+			
+			
+										<div id="page-11430" class="type-page">
+
+				<!-- page-title -->
+								<!-- /page-title -->
+
+				<div class="page-content entry-content">
+
+					
+					<script>
+(function ( $el, el ){
+	function responsive_classes() {
+		if ( el.clientWidth > 1024 ) {
+			$el.removeClass( 'tb_tablet tb_mobile' ).addClass( 'tb_desktop' );
+		} else if ( el.clientWidth < 680 ) {
+			$el.removeClass( 'tb_desktop tb_tablet' ).addClass( 'tb_mobile' );
+		} else if ( el.clientWidth < 1024 ) {
+			$el.removeClass( 'tb_desktop tb_mobile' ).addClass( 'tb_tablet' );
+		}
+	}
+	responsive_classes();
+	jQuery( window ).resize( responsive_classes );
+})( jQuery( 'body' ), document.body )
+</script>
+		<script type="text/javascript">
+				if( document.getElementById( "builder-styles-css" ) ) document.getElementById( "builder-styles-css" ).insertAdjacentHTML( "beforebegin", "<link id='builder-styles' rel='stylesheet' href='https://securityweekly.com/wp-content/themes/magazine/themify/themify-builder/css/themify-builder-style.min.css?ver=3.1.9' type='text/css' />" );
+				</script><div id="themify_builder_content-11430" data-postid="11430" class="themify_builder_content themify_builder_content-11430 themify_builder themify_builder_front">
+
+				<!-- module_row -->
+			<div  data-gutter="gutter-default" class="themify_builder_row themify_builder_11430_row module_row module_row_0 module_row_11430-0 clearfix gutter-default" data-column-alignment="" data-desktop_dir="ltr" data-tablet_dir="ltr" data-mobile_dir="ltr">
+
+		
+				
+				<div class="row_inner_wrapper">
+					<div class="row_inner gutter-default tablet-col-direction-ltr desktop-col-direction-ltr mobile-col-direction-ltr">
+
+						
+						
+							
+		<div  class="col-full first tb-column  module_column tb_11430_column module_column_0 module_column_11430-0-0" >
+
+			
+			
+			<div class="tb-column-inner">
+
+				
+				
+					
+    <div
+id="post-11430-0-0-1" class="module module-post post-11430-0-0-1 "><h3 class="module-title">Latest Episodes</h3><div
+class="builder-posts-wrap clearfix loops-wrapper grid2"><article
+id="post-15062" class="post clearfix cat-1242 cat-1165 post-15062 type-post status-publish format-standard has-post-thumbnail hentry category-interview category-psw tag-2528 tag-elevate-security tag-human-centric tag-interview tag-masha-sedova tag-pauls-security-weekly tag-security-weekly-2 has-post-title no-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2018/04/10/masha-sedova-elevate-security-pauls-security-weekly-554/"><img
+src="https://i1.wp.com/securityweekly.com/wp-content/uploads/2018/04/Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg?w=1165&#038;ssl=1" class=" wp-image-15061" alt="Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg" srcset="https://i1.wp.com/securityweekly.com/wp-content/uploads/2018/04/Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg?w=720&amp;ssl=1 720w, https://i1.wp.com/securityweekly.com/wp-content/uploads/2018/04/Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg?resize=245%2C138&amp;ssl=1 245w, https://i1.wp.com/securityweekly.com/wp-content/uploads/2018/04/Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg?resize=317%2C178&amp;ssl=1 317w, https://i1.wp.com/securityweekly.com/wp-content/uploads/2018/04/Masha-Sedova-Elevate-Security-Pauls-Security-Weekly-554__Image.jpeg?resize=327%2C183&amp;ssl=1 327w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2018/04/10/masha-sedova-elevate-security-pauls-security-weekly-554/">Masha Sedova, Elevate Security &#8211; Paul&#8217;s Security Weekly #554</a></h2><div
+class="entry-content"></div></div></article><article
+id="post-15100" class="post clearfix cat-425 post-15100 type-post status-publish format-standard has-post-thumbnail hentry category-hnn tag-2550 tag-google-chrome tag-jason-wood tag-malware tag-oracle tag-paladin-security tag-paul-asadoorian tag-pubg tag-ransomware tag-verizon tag-youtube has-post-title no-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2018/04/10/google-chrome-oracle-pubg-and-ransomware-hack-naked-news-168/"><img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg?w=1165&#038;ssl=1" class=" wp-image-15099" alt="Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg" srcset="https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg?w=720&amp;ssl=1 720w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg?resize=245%2C138&amp;ssl=1 245w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg?resize=317%2C178&amp;ssl=1 317w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Google-Chrome-Oracle-PUBG-and-Ransomware-Hack-Naked-News-168__Image.jpeg?resize=327%2C183&amp;ssl=1 327w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2018/04/10/google-chrome-oracle-pubg-and-ransomware-hack-naked-news-168/">Google Chrome, Oracle, PUBG, and Ransomware &#8211; Hack Naked News #168</a></h2><div
+class="entry-content"></div></div></article><article
+id="post-15059" class="post clearfix cat-1242 cat-1165 post-15059 type-post status-publish format-standard has-post-thumbnail hentry category-interview category-psw tag-2528 tag-interview tag-jeff-man tag-joff-thyer tag-katherine-teitler tag-misti tag-not-kevin tag-paul-asadoorian tag-pauls-security-weekly tag-security-weekly-2 has-post-title no-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2018/04/09/katherine-teitler-misti-pauls-security-weekly-554/"><img
+src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/04/Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg?w=1165&#038;ssl=1" class=" wp-image-15058" alt="Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg" srcset="https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/04/Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg?w=720&amp;ssl=1 720w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/04/Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg?resize=245%2C138&amp;ssl=1 245w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/04/Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg?resize=317%2C178&amp;ssl=1 317w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2018/04/Katherine-Teitler-MISTI-Pauls-Security-Weekly-554__Image.jpeg?resize=327%2C183&amp;ssl=1 327w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2018/04/09/katherine-teitler-misti-pauls-security-weekly-554/">Katherine Teitler, MISTI &#8211; Paul&#8217;s Security Weekly #554</a></h2><div
+class="entry-content"></div></div></article><article
+id="post-15051" class="post clearfix cat-304 post-15051 type-post status-publish format-standard has-post-thumbnail hentry category-esw tag-2524 tag-doug-white tag-enterprise-security-weekly tag-paul-asadoorian tag-secure-digital-life tag-security-threats-from-virtual-machines tag-six-security-threats-to-virtual-machines tag-tech-segment tag-topic has-post-title no-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2018/04/08/topic-security-threats-from-virtual-machines-enterprise-security-weekly-86/"><img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg?w=1165&#038;ssl=1" class=" wp-image-15050" alt="Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg" srcset="https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg?w=720&amp;ssl=1 720w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg?resize=245%2C138&amp;ssl=1 245w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg?resize=317%2C178&amp;ssl=1 317w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2018/04/Topic-Security-Threats-from-Virtual-Machines-Enterprise-Security-Weekly-86__Image.jpeg?resize=327%2C183&amp;ssl=1 327w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2018/04/08/topic-security-threats-from-virtual-machines-enterprise-security-weekly-86/">Topic: Security Threats from Virtual Machines &#8211; Enterprise Security Weekly #86</a></h2><div
+class="entry-content"></div></div></article></div><div
+class="pagenav clearfix"> <span
+class="number current">1</span>  <a
+href="https://securityweekly.com/page/2/" class="number">2</a>  <a
+href="https://securityweekly.com/page/3/" class="number">3</a>  <a
+href="https://securityweekly.com/page/4/" class="number">4</a>  <a
+href="https://securityweekly.com/page/5/" class="number">5</a> <a
+href="https://securityweekly.com/page/108/" title="&raquo;" class="number">&raquo;</a></div></div>
+
+<div
+id="slider-11430-0-0-2-loader" class="themify_builder_slider_loader" style="height:200px;"></div><div
+id="slider-11430-0-0-2" class="module module-slider slider-11430-0-0-2 themify_builder_slider_wrap clearfix  slider-default  "><h3 class="module-title">Future of Security - DefCon 2017</h3><ul
+class="themify_builder_slider"
+data-id="slider-11430-0-0-2"
+data-visible="1"
+data-scroll="1"
+data-auto-scroll="5"
+data-speed="1"
+data-wrap="yes"
+data-arrow="yes"
+data-pagination="yes"
+data-effect="scroll"
+data-height="variable"
+data-pause-on-hover="resume"
+data-type="video"><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image video-wrap">
+<iframe
+width="1165" height="655" src="https://www.youtube.com/embed/tkSr8VzhSZ4?feature=oembed"  allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div
+class="slide-content"><h3 class="slide-title">
+Matt Alderman</h3><div
+class="video-caption">
+Matt Alderman explains the future of security with Paul and Josh Marpet. Matt goes in depth about AI and how to keep up with malware. Stay tuned for more interviews with GRIMM!More Information: https://crossbow.grimm-co.com/</div></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image video-wrap">
+<iframe
+width="1165" height="655" src="https://www.youtube.com/embed/TRRETygE0R0?feature=oembed"  allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div
+class="slide-content"><h3 class="slide-title">
+Winn Schwartau</h3><div
+class="video-caption">
+Winn Schwartau explains the future of security with Paul and Josh Marpet. Winn is an expert on security, privacy, infowar, cyber-terrorism and related topics. Stay tuned for more interviews with GRIMM!More Information: https://crossbow.grimm-co.com/</div></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image video-wrap">
+<iframe
+width="1165" height="655" src="https://www.youtube.com/embed/oihqSMxhpAY?feature=oembed"  allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div
+class="slide-content"><h3 class="slide-title">
+Katie Moussouris</h3><div
+class="video-caption">
+Katie Moussouris and her luscious pink hair, answers the future of security.More Information: https://crossbow.grimm-co.com/</div></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image video-wrap">
+<iframe
+width="1165" height="655" src="https://www.youtube.com/embed/_EaMkoNKtLI?feature=oembed"  allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div
+class="slide-content"><h3 class="slide-title">
+Jeff Man</h3><div
+class="video-caption">
+We pit Jeff Man against the panel to answer questions about the future of security!More Information: https://crossbow.grimm-co.com</div></div></div></li></ul></div>
+
+<div
+id="slider-11430-0-0-3-loader" class="themify_builder_slider_loader" style="height:200px;"></div><div
+id="slider-11430-0-0-3" class="module module-slider slider-11430-0-0-3 themify_builder_slider_wrap clearfix  slider-agency  themify_builder_slider_vertical"><h3 class="module-title">Hosts</h3><ul
+class="themify_builder_slider"
+data-id="slider-11430-0-0-3"
+data-visible="1"
+data-scroll="1"
+data-auto-scroll="8"
+data-speed=".5"
+data-wrap="yes"
+data-arrow="yes"
+data-pagination="no"
+data-effect="scroll"
+data-height="variable"
+data-pause-on-hover="resume" ><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2017/06/Larry_Pesce.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11441" alt="Larry Pesce" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Larry Pesce</h3><p>Larry is currently the Director of Research and Senior Managing Consultant at InGuardians. Larry is also a Certified SANS Instructor, specializing in teaching wireless security courses.</p><p>Larry currently hosts <a
+href="https://wiki.securityweekly.com/Show_Notes">Paul&#8217;s Security Weekly.</a></p><p>Follow Larry on Twitter: <a
+href="https://twitter.com/haxorthematrix">@haxorthematrix</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2017/06/Paul_Asadoorian-317x188-360x200-317x176-360x200.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11806" alt="Paul Asadoorian" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Paul Asadoorian</h3><p>Paul Asadoorian is the founder and CEO of Security Weekly, Embedded device security researcher, Security podcaster and CEO of Offensive Countermeasures.</p><p>Follow Paul on Twitter: <a
+href="https://twitter.com/securityweekly">@securityweekly</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2017/06/John_Strand-317x317.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11437" alt="John Strand" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+John Strand</h3><p>John Strand is the Founder of Black Hills Information Security and CTO and founder of Offensive Countermeasures.</p><p>John currently hosts <a
+href="https://wiki.securityweekly.com/Enterprise_Security_Weekly_Show_Notes">Enterprise Security Weekly</a></p><p>Follow John on Twitter: <a
+href="https://twitter.com/strandjs">@strandjs</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/06/Michael_Santarcangelo.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11436" alt="Michael Santarcangelo" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Michael Santarcangelo</h3><p>Michael Santacangelo is the  founder of <a
+href="http://securitycatalyst.com">SecurityCatalyst.com</a>, author of Into the Breach, and creator of the leadership-driven Straight Talk Framework &#8211; with our favorite question, &#8220;What problem are you trying to solve?&#8221;</p><p>Michael currently hosts <a
+href="https://wiki.securityweekly.com/Startup_Security_Weekly_Show_Notes">Startup Security Weekly</a></p><p>Follow Michael on Twitter: <a
+href="https://twitter.com/catalyst">@catalyst</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i1.wp.com/securityweekly.com/wp-content/uploads/2017/06/Jason_Wood.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11447" alt="Jason Wood" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Jason Wood</h3><p>Jason Wood is the founder of Paladin Security and the primary consultant.  Prior to starting Paladin Security, Jason was a Principal Security Consultant with Secure Ideas.  At Secure Ideas he performed penetration tests for clients in a wide range of industries.  These include health care, financial services, SaaS businesses, government agencies and critical infrastructure.</p><p>Jason currently hosts <a
+href="https://wiki.securityweekly.com/Hack_Naked_Show_Notes">Hack Naked News</a></p><p>Follow Jason on Twitter: <a
+href="https://twitter.com/Jason_Wood">@Jason_Wood</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/06/Joff_Thyer-317x317.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11438" alt="Joff Thyer" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Joff Thyer</h3><p>Joff is a Security Analyst for Black Hills Information Security and has over 15 years of experience in the IT industry in roles such as enterprise network architect and network security defender. He has experience with intrusion detection and prevention systems, penetration testing, engineering network infrastructure defense, and software development.</p><p>Joff currently hosts <a
+href="https://wiki.securityweekly.com/Show_Notes">Paul&#8217;s Security Weekly</a></p><p>Follow Joff on Twitter: <a
+href="https://twitter.com/joff_thyer">@joff_thyer</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/06/Jeff_Man-317x212.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11439" alt="Jeff Man" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Jeff Man</h3><p>Jeff Man is a  Cryptanalyst, infosec analyst, pioneering ex-NSA pen tester, PCI specialist and certified security curmudgeon.</p><p>Jeff currently hosts <a
+href="https://wiki.securityweekly.com/Show_Notes">Paul&#8217;s Security Weekly</a></p><p>Follow Jeff on Twitter: <a
+href="https://twitter.com/MrJeffMan">@MrJeffMan</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2017/06/Jack_Daniel.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11448" alt="Jack Daniel" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Jack Daniel</h3><p>Jack Daniel  currently works for Tenable Network Security and is a co-founder of Security BSides.</p><p>Jack currently hosts <a
+href="https://wiki.securityweekly.com/Show_Notes">Paul&#8217;s Security Weekly</a></p><p>Follow Jack on Twitter: <a
+href="https://twitter.com/jack_daniel">@jack_daniel</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2017/06/Beau_Bullock-317x317.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11435" alt="Beau Bullock" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Beau Bullock</h3><p>Beau is currently a security analyst at Black Hills Information Security and has held positions in the financial and health industries and has experience with all aspects of enterprise network security including penetration testing, vulnerability analysis, data loss prevention, wireless security, firewall management, and employee security training. Beau is a Hack Naked TV host, and frequent speaker at industry events.</p><p>Beau currently hosts <a
+href="https://wiki.securityweekly.com/Tradecraft_Security_Weekly">Tradecraft Security Weekly</a></p><p>Follow Beau on Twitter: <a
+href="https://twitter.com/dafthack">@dafthack</a></p></div></div></li><li><div
+class="slide-inner-wrap" style=""><div
+class="slide-image">
+<img
+src="https://i1.wp.com/securityweekly.com/wp-content/uploads/2017/05/Carlos_Perez-317x316.jpg?resize=360%2C200&#038;ssl=1" width="360" height="200" class=" wp-image-11449" alt="Carlos Perez" data-recalc-dims="1" /></div><div
+class="slide-content"><h3 class="slide-title">
+Carlos Perez</h3><p>Carlos is currently the Director of Reverse Engineering at Tenable Network Security and well-known for his research on both Metasploit and Windows Powershell. His blog <a
+href="https://www.darkoperator.com/">www.darkoperator.com</a>carries the tag line: &#8220;Shell Is Only The Beginning&#8221;.</p><p>Carlos currently hosts <a
+href="https://wiki.securityweekly.com/Tradecraft_Security_Weekly">Paul&#8217;s Security Weekly</a></p><p>Follow Carlos on Twitter: <a
+href="https://twitter.com/Carlos_Perez">@Carlos_Perez</a></p></div></div></li></ul></div>
+
+    <div
+id="post-11430-0-0-4" class="module module-post post-11430-0-0-4 "><h3 class="module-title">Latest Articles</h3><div
+class="builder-posts-wrap clearfix loops-wrapper grid2"><article
+id="post-12153" class="post clearfix cat-305 cat-32 post-12153 type-post status-publish format-standard has-post-thumbnail hentry category-articles category-security-weekly tag-blackhat tag-bsides tag-defcon tag-hacker-cons tag-opsec has-post-title has-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2017/07/12/securecon/"><img
+src="https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?w=1165&#038;ssl=1" class=" wp-image-12159" alt="Staying Secure At A Hacker Con" srcset="https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?resize=245%2C163&amp;ssl=1 245w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?resize=768%2C511&amp;ssl=1 768w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?resize=317%2C211&amp;ssl=1 317w, https://i0.wp.com/securityweekly.com/wp-content/uploads/2017/07/defconctf.jpg?resize=327%2C217&amp;ssl=1 327w" sizes="(max-width: 1165px) 100vw, 1165px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><p
+class="post-meta entry-meta">
+<span
+class="post-category"><a
+href="https://securityweekly.com/category/articles/" rel="category tag">Articles</a>/ <a
+href="https://securityweekly.com/category/security-weekly/" rel="category tag">SecurityWeekly</a></span></p><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2017/07/12/securecon/">How To Stay Secure At Hacker Conferences</a></h2><p
+class="post-meta entry-meta"><span
+class="author-avatar"><img
+alt='' src='https://secure.gravatar.com/avatar/3ef6f3c316994f14a3a90520c5c9904b?s=30&#038;r=pg' srcset='https://secure.gravatar.com/avatar/3ef6f3c316994f14a3a90520c5c9904b?s=60&#038;r=pg 2x' itemprop='image' class='avatar avatar-30 photo' height='30' width='30' /></span>
+<span
+class="author-name"><span
+class="author vcard"><a
+class="url fn n" href="https://securityweekly.com/author/paul-asadoorian/" rel="author">Paul Asadoorian</a></span></span>
+<span
+class="post-tag"><a
+href="https://securityweekly.com/tag/blackhat/" rel="tag">blackhat</a>, <a
+href="https://securityweekly.com/tag/bsides/" rel="tag">bsides</a>, <a
+href="https://securityweekly.com/tag/defcon/" rel="tag">defcon</a>, <a
+href="https://securityweekly.com/tag/hacker-cons/" rel="tag">hacker cons</a>, <a
+href="https://securityweekly.com/tag/opsec/" rel="tag">opsec</a></span>
+<time
+datetime="2017-07-12" class="post-date entry-date updated">July 12, 2017</time></p><div
+class="entry-content"><p>Having Fun While Being Diligent Hacker cons, such as the upcoming Blackhat, BSides LV and Defcon conferences are really fun experiences, great networking opportunities, and a chance to learn something new about security. While we have fun at these conferences, we must remember not to lose sight of our personal security and/or OPSEC. We recently [&hellip;]</p></div></div></article><article
+id="post-9044" class="post clearfix cat-305 cat-277 post-9044 type-post status-publish format-standard has-post-thumbnail hentry category-articles category-security-weekly-3 tag-breaches tag-hacking-news tag-paul-asadoorian tag-security-news tag-security-tools tag-security-vulnerabilities tag-security-weekly-2 tag-vulnerabilities has-post-title has-post-date has-post-category has-post-tag no-post-comment has-post-author "><figure
+class="post-image ">
+<a
+href="https://securityweekly.com/2016/05/25/keeping-up-with-security-news-a-few-of-my-secrets/"><img
+src="https://i2.wp.com/securityweekly.com/wp-content/uploads/2016/05/securityguard.jpg?w=1165&#038;ssl=1" class=" wp-image-9043" alt="securityguard.jpg" srcset="https://i2.wp.com/securityweekly.com/wp-content/uploads/2016/05/securityguard.jpg?w=498&amp;ssl=1 498w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2016/05/securityguard.jpg?resize=222%2C167&amp;ssl=1 222w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2016/05/securityguard.jpg?resize=317%2C238&amp;ssl=1 317w, https://i2.wp.com/securityweekly.com/wp-content/uploads/2016/05/securityguard.jpg?resize=327%2C245&amp;ssl=1 327w" sizes="(max-width: 498px) 100vw, 498px" data-recalc-dims="1" /></a></figure><div
+class="post-content"><p
+class="post-meta entry-meta">
+<span
+class="post-category"><a
+href="https://securityweekly.com/category/articles/" rel="category tag">Articles</a>/ <a
+href="https://securityweekly.com/category/security-weekly-3/" rel="category tag">Security Weekly</a></span></p><h2 class="post-title entry-title"><a
+href="https://securityweekly.com/2016/05/25/keeping-up-with-security-news-a-few-of-my-secrets/">Keeping Up With Security News: A Few Of My Secrets</a></h2><p
+class="post-meta entry-meta"><span
+class="author-avatar"><img
+alt='' src='https://secure.gravatar.com/avatar/3ef6f3c316994f14a3a90520c5c9904b?s=30&#038;r=pg' srcset='https://secure.gravatar.com/avatar/3ef6f3c316994f14a3a90520c5c9904b?s=60&#038;r=pg 2x' itemprop='image' class='avatar avatar-30 photo' height='30' width='30' /></span>
+<span
+class="author-name"><span
+class="author vcard"><a
+class="url fn n" href="https://securityweekly.com/author/paul-asadoorian/" rel="author">Paul Asadoorian</a></span></span>
+<span
+class="post-tag"><a
+href="https://securityweekly.com/tag/breaches/" rel="tag">breaches</a>, <a
+href="https://securityweekly.com/tag/hacking-news/" rel="tag">hacking news</a>, <a
+href="https://securityweekly.com/tag/paul-asadoorian/" rel="tag">paul asadoorian</a>, <a
+href="https://securityweekly.com/tag/security-news/" rel="tag">security news</a>, <a
+href="https://securityweekly.com/tag/security-tools/" rel="tag">security tools</a>, <a
+href="https://securityweekly.com/tag/security-vulnerabilities/" rel="tag">security vulnerabilities</a>, <a
+href="https://securityweekly.com/tag/security-weekly-2/" rel="tag">security weekly</a>, <a
+href="https://securityweekly.com/tag/vulnerabilities/" rel="tag">vulnerabilities</a></span>
+<time
+datetime="2016-05-25" class="post-date entry-date updated">May 25, 2016</time></p><div
+class="entry-content"><p>Photo Credit: Ethan Prater Many people ask me how I keep up with the security news. Its really not a huge secret, okay maybe some things are secret. I will share a couple of items with the Security Weekly Tribe: I&#8217;ve been using an RSS reader since the begining. The software I choose to use [&hellip;]</p></div></div></article></div></div>
+
+				
+			</div><!-- /.tb-column-inner -->
+					</div>
+		<!-- /.tb-column -->
+		
+		
+								
+								
+							
+						</div>
+						<!-- /row_inner -->
+					</div>
+					<!-- /row_inner_wrapper -->
+				</div>
+				<!-- /module_row -->
+		</div>
+<!-- /themify_builder_content -->
+					
+					
+					<!-- comments -->
+										<!-- /comments -->
+
+				</div>
+				<!-- /.post-content -->
+
+				</div><!-- /.type-page -->
+			
+						
+					</div>
+		<!-- /content -->
+		
+	</div>
+	<!-- /#contentwrap -->
+
+	    
+    <aside id="sidebar" itemscope="itemscope" itemtype="https://schema.org/WPSidebar">
+
+            
+            <div id="text-3" class="widget widget_text"><h4 class="widgettitle">About Security Weekly</h4>			<div class="textwidget"><p>Security Weekly is a security podcast network for information security professionals, by information security professionals. We produce a lineup of shows for the security community, completely free.</p>
+<div class="youtube-player" data-id="X2nwkk0cXFM"></div>
+</div>
+		</div><div id="text-2" class="widget widget_text"><h4 class="widgettitle">Get The Inside Scoop</h4>			<div class="textwidget"><p>The Security Weekly Insider newsletter will provide you with information and updates on Security Weekly webcasts, podcasts, training and more!</p>
+<p><script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.2 - https://wordpress.org/plugins/mailchimp-for-wp/ --></p>
+<form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-8606 mc4wp-form-basic" method="post" data-id="8606" data-name="Default sign-up form" >
+<div class="mc4wp-form-fields">
+<p>
+    <input type="email" name="EMAIL" placeholder="Your email address" required="required"><br />
+<input type="submit" value="Subscribe">
+</p>
+</div>
+<p><label style="display: none !important;">Leave this field empty if you&#8217;re human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1523583190" /><input type="hidden" name="_mc4wp_form_id" value="8606" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /></p>
+<div class="mc4wp-response"></div>
+</form>
+<p><!-- / MailChimp for WordPress Plugin --></p>
+</div>
+		</div>
+            <div class="clearfix">
+
+                    <div class="secondary">
+                                                </div>
+
+                    <div class="secondary last">
+                                                </div>
+
+            </div>
+
+            
+            
+    </aside>
+    <!-- /#sidebar -->
+
+    
+	
+
+</div>
+<!-- /layout-container -->
+
+
+	    </div>
+	<!-- /body -->
+		
+	<div id="footerwrap">
+    
+    			<footer id="footer" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+			
+			<p class="back-top">
+				<a href="#header">Back to Top</a>
+			</p>
+
+			
+	<div class="footer-widgets clearfix">
+
+								<div class="col3-1 first">
+				<div id="rss_links-2" class="widget widget_rss_links"><h4 class="widgettitle">Subscribe To The Blog:</h4><p><a target="_self" href="https://securityweekly.com/feed/" title="Subscribe to Posts"><img src="https://securityweekly.com/wp-content/plugins/jetpack/images/rss/red-medium.png" alt="RSS Feed" /></a>&nbsp;<a target="_self" href="https://securityweekly.com/feed/" title="Subscribe to Posts">RSS - Posts</a></p>
+</div>			</div>
+								<div class="col3-1 ">
+				<div id="search-3" class="widget widget_search"><h4 class="widgettitle">Search</h4><form method="get" id="searchform" action="https://securityweekly.com/">
+	<i class="fa fa-search icon-search"></i>
+	<input type="text" name="s" id="s" placeholder="Search" />
+
+</form></div>			</div>
+								<div class="col3-1 ">
+				<div id="themify-twitter-2" class="widget twitter"><h4 class="widgettitle">Follow Us On Twitter</h4><div class="twitter-list ">
+			<div id="twitter-block-1"><ul class="twitter-list"><li class="twitter-item">Paul's Security Weekly is LIVE now with a FULL CREW!! Tune in here: <a href="https://t.co/k8IRzOi7Ta" target="_blank" title="https://securityweekly.com/live/" class="twitter-user">securityweekly.com/live/</a></li><li class="twitter-item">Stop by the Security Weekly booth at SOURCE Boston next month to play Hacker Movie Trivia with myself or Keith! Can… <a href="https://t.co/o1N2TbIodc" target="_blank" title="https://twitter.com/i/web/status/984501500679458816" class="twitter-user">twitter.com/i/web/status/9…</a></li><li class="twitter-item">Don't forget to register for our next webcast with our friends from <a href="//twitter.com/DISTIL" target="_blank" title="Distil Networks" class="twitter-user">@DISTIL</a> Networks! "The Year Bad Bots Went Mains… <a href="https://t.co/vUWQ7HzLTK" target="_blank" title="https://twitter.com/i/web/status/984469974210277378" class="twitter-user">twitter.com/i/web/status/9…</a></li><li class="twitter-item">Tracking Security Innovation – Business Security Weekly #80 <a href="https://t.co/vH4mXP4ZhZ" target="_blank" title="https://securityweekly.com/2018/04/12/tracking-security-innovation-business-security-weekly-80/" class="twitter-user">securityweekly.com/2018/04/12/tra…</a> <a href="https://t.co/HwxokKSCQ9" target="_blank" title="https://twitter.com/securityweekly/status/984450950034264064/photo/1" class="twitter-media">pic.twitter.com/HwxokKSCQ9</a></li><li class="twitter-item">Enterprise Security Weekly is LIVE now!! Tune in here: <a href="https://t.co/k8IRzOi7Ta" target="_blank" title="https://securityweekly.com/live/" class="twitter-user">securityweekly.com/live/</a></li></ul></div><div class="follow-user"><a href="//twitter.com/securityweekly">→ Follow Us</a></div></div></div>			</div>
+		
+	</div>
+	<!-- /.footer-widgets -->
+
+
+			<div class="social-widget">
+							</div>
+			<!-- /.social-widget -->
+
+			<div class="footer-nav-wrap">
+				<ul id="footer-nav" class="footer-nav menu-name-footer-column-menu"><li id="menu-item-1105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1105"><a href="https://securityweekly.com/about/">About</a></li>
+<li id="menu-item-1107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1107"><a href="https://securityweekly.com/contact/">Contact</a></li>
+<li id="menu-item-1111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1111"><a href="https://securityweekly.com/press/">Press</a></li>
+<li id="menu-item-1106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1106"><a href="https://securityweekly.com/careers/">Careers</a></li>
+<li id="menu-item-1110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a href="https://securityweekly.com/people/">People</a></li>
+<li id="menu-item-11400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11400"><a href="https://securityweekly.com/sponsor-info/">Sponsor Info</a></li>
+</ul>			</div>
+	
+			<div class="footer-text clearfix">
+				<div class="one">Copyright Security Weekly 2017</div>				<div class="two">Est. 2005</div>			</div>
+			<!-- /footer-text --> 
+					</footer>
+		<!-- /#footer --> 
+        	</div>
+	<!-- /#footerwrap -->
+	
+</div>
+<!-- /#pagewrap -->
+
+
+<!-- SCHEMA BEGIN --><script type="application/ld+json">[{"@context":"http:\/\/schema.org","@type":"WebPage","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/securityweekly.com\/"},"headline":"The Security Podcast Network","datePublished":"2017-06-19T09:19:40+00:00","dateModified":"2017-06-19T09:19:40+00:00","description":"","commentCount":"0"}]</script><!-- /SCHEMA END --><!-- wp_footer -->
+
+
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type='text/javascript' src='https://securityweekly.com/wp-content/uploads/themify/cache/magazine/scripts/11430/single/footer-2723407904.js?ver=3.1.9'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201815.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.9',blog:'98240019',post:'11430',tz:'-4',srv:'securityweekly.com'} ]);
+	_stq.push([ 'clickTrackerInit', '98240019', '11430' ]);
+</script>
+
+</body>
+</html>
