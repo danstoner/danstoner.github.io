@@ -18,6 +18,7 @@ danstoner.github.io
 # Links:
 
 [resume (PDF)](https://github.com/danstoner/danstonerresume/raw/master/two_page/danstoner_resume_two_page.pdf)
+
 [personal blog](http://thatlinuxbox.com/blog/)
 
 
